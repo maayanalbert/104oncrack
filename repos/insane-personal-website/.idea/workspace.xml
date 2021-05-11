@@ -127,7 +127,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1620693612715</updated>
-      <workItem from="1620693614547" duration="7561000" />
+      <workItem from="1620693614547" duration="7937000" />
+      <workItem from="1620737728199" duration="654000" />
     </task>
     <servers />
   </component>
@@ -144,6 +145,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="584" y="309" key="EditFileWatcherDialog" timestamp="1620694808614">
