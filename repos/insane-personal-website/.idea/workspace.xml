@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b982db2a-590e-479b-bdb7-1fc96293a808" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../AsciiBird" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Misc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SAMPLE_SKETCH/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SAMPLE_SKETCH/sketch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SAMPLE_SKETCH/stamper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SAMPLE_SKETCH/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../conclave" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../example-typeorm-postgres" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../familybingo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sketch/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sketch/sketch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sketch/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../js-info/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../js-info/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../js-info/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../js-info/.idea/mos-coding.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../js-info/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../js-info/classes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../js-info/collections.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../js-info/scratch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../js-info/tryCatch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../js-info/variableTypes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mos-coding.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mos-pricing" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my-app/src/ChatComponents/Chat.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my-app/src/ChatComponents/ChatBox.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my-app/src/ChatComponents/MessageList.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my-app/src/FakeApi.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my-app/src/FakeBackend.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nest" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nestjs-realworld-example-app" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nestjs-rest-graphql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project-name/.eslintrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project-name/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project-name/.prettierrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project-name/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project-name/nest-cli.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project-name/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project-name/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project-name/src/app.controller.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project-name/src/app.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project-name/src/app.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project-name/src/app.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project-name/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project-name/test/app.e2e-spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project-name/test/jest-e2e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project-name/tsconfig.build.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project-name/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../race" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../robust-app.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../robust-app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../robust-app/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../robust-app/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../robust-app/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../robust-app/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../robust-app/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../robust-app/public/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../robust-app/public/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../robust-app/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../robust-app/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../robust-app/src.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../robust-app/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../robust-app/src/App.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../robust-app/src/App.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../robust-app/src/components/ModelOverview.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../robust-app/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../robust-app/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../robust-app/src/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../robust-app/src/serviceWorker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../robust-app/src/setupTests.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../robust-app/yarn.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../simple-react-full-stack" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled_os" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../weather" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../weather-master" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../weather-master.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../p5-authoring" beforeDir="false" afterPath="$PROJECT_DIR$/../p5-authoring" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stamper" beforeDir="false" afterPath="$PROJECT_DIR$/../stamper" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../whos-around2" beforeDir="false" afterPath="$PROJECT_DIR$/../whos-around2" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1sMs5hGpKWH5JiQk5m0GYJfptrU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b982db2a-590e-479b-bdb7-1fc96293a808" name="Default Changelist" comment="" />
+      <created>1620693612715</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1620693612715</updated>
+      <workItem from="1620693614547" duration="612000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
