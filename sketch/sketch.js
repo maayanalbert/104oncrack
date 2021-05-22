@@ -1,23 +1,18 @@
-let vehicle;
-
-const landmarks = [];
+const orbs = [];
 
 function setup() {
-  createCanvas(400, 400);
-  vehicle = new Vehicle(width / 2, height / 2);
-  landmarks.push(new LandMark(50, 10, 70, "Stamper"));
-  landmarks.push(new LandMark(270, 300, 150, "Carnegie Mellon"));
-  landmarks.push(new LandMark(350, 130, 120, "Avenue"));
+  createCanvas(window.innerWidth, window.innerHeight);
+  orbs.push(new Vehicle(50, 10, 70));
+  orbs.push(new Vehicle(270, 700, 150));
+  orbs.push(new Vehicle(500, 500, 120));
   textAlign(CENTER, CENTER);
 }
 
 function draw() {
-  background(220);
-  landmarks.forEach((landmark) => landmark.display());
-
-  vehicle.seek(createVector(mouseX, mouseY));
-  vehicle.update();
-  vehicle.display();
+  background(200);
+  orbs.forEach((orb) => orb.seek(createVector(mouseX, mouseY)));
+  orbs.forEach((orb) => orb.update());
+  orbs.forEach((orb) => orb.display());
 }
 
 class LandMark {

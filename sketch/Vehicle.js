@@ -1,12 +1,13 @@
 // taken from: https://natureofcode.com/book/chapter-6-autonomous-agents/
 class Vehicle {
-  constructor(x, y) {
+  constructor(x, y, r) {
     this.location = createVector(x, y);
     this.velocity = createVector(0, 0);
     this.acceleration = createVector(0, 0);
-    this.r = 3;
+    this.r = r;
     this.maxforce = 0.1;
     this.maxspeed = 4;
+    this.dampening = 0.1;
   }
 
   update() {
@@ -23,8 +24,12 @@ class Vehicle {
     return createVector(x, y);
   }
 
-  applyForce(force) {
-    this.acceleration.add(force.x, force.y);
+  applyForce(force, distance) {
+    // console.log(distance);
+    const distDampening = map(distance, 0, width + height, 0.5, 0.1);
+    const sizeDampening = map(this.r, 0, 200, 0.5, 0.1);
+    const dampening = distDampening * sizeDampening * 0.5;
+    this.acceleration.add(force.x * dampening, force.y * dampening);
   }
 
   seek(target) {
@@ -33,21 +38,17 @@ class Vehicle {
     desired.mult(this.maxspeed);
     const steer = desired.sub(this.velocity);
     steer.limit(this.maxforce);
-    this.applyForce(steer);
+    const distance = this.getDistance(this.location, target);
+    this.applyForce(steer, distance);
   }
 
   display() {
-    const theta = this.velocity.heading() + PI / 2;
-    fill(175);
-    stroke(0);
-    push();
-    translate(this.location.x, this.location.y);
-    rotate(theta);
-    beginShape();
-    vertex(0, -this.r * 2);
-    vertex(-this.r, this.r * 2);
-    vertex(this.r, this.r * 2);
-    endShape(CLOSE);
-    pop();
+    ellipse(this.location.x, this.location.y, this.r);
+  }
+
+  getDistance(location, target) {
+    return Math.sqrt(
+      Math.pow(location.x - target.x, 2) + Math.pow(location.y - target.y, 2)
+    );
   }
 }
