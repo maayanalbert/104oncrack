@@ -28,7 +28,7 @@ class Vehicle {
     // console.log(distance);
     const distDampening = map(distance, 0, width + height, 0.5, 0.1);
     const sizeDampening = map(this.r, 0, 200, 0.5, 0.1);
-    const dampening = distDampening * sizeDampening * 0.5;
+    const dampening = distDampening * sizeDampening;
     this.acceleration.add(force.x * dampening, force.y * dampening);
   }
 
