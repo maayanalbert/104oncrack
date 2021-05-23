@@ -4,8 +4,8 @@ function setup() {
   p2 = makeParticle(0, 0, 10, color(255), false);
   p3 = makeParticle(0, 0, 10, color(255), false);
   p4 = makeParticle(
-    window.innerWidth / 2,
-    window.innerHeight / 2,
+    window.innerWidth,
+    window.innerHeight,
     10,
     color(255),
     true
