@@ -18,15 +18,17 @@ function setup() {
 
 // use this maybe???
 // https://p5js.org/reference/#/p5/bezierVertex
+// blend mode https://p5js.org/reference/#/p5/blendMode -> you want ADD
 
 function draw() {
-  background(0, 0, 0);
+  background(0, 0, 0, 50);
 
   updateParticles(false, true);
 
   noFill();
-  stroke(255);
   strokeWeight(1);
+
+  stroke(255);
 
   bezier(
     particles[0].px,
