@@ -16,6 +16,9 @@ function setup() {
   connectParticles(p3, p4, 50, 1, color(255));
 }
 
+// use this maybe???
+// https://p5js.org/reference/#/p5/bezierVertex
+
 function draw() {
   background(0, 0, 0);
 
