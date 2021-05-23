@@ -4,6 +4,7 @@ var particles = [];
 var connections = {};
 // The index in the particle array, of the one the user has clicked.
 var grabbedParticle = -1;
+var stringIsActive = false;
 
 function connectParticles(pk, qk, distance, lineWeight, lineColor) {
   if (pk < 0 || pk >= particles.length || qk < 0 || qk >= particles.length) {
@@ -38,7 +39,8 @@ function updateParticles(gravityOn, boundariesOn = true) {
     particles[i].update(gravityOn, boundariesOn); // update all locations
   }
 
-  handleMousePressed();
+  updateStringIsActive();
+  handleStringActive();
 
   Object.values(connections).forEach(function (connection) {
     connection.update();
@@ -55,8 +57,46 @@ function drawParticles() {
   }
 }
 
-function handleMousePressed() {
-  if (!mouseIsPressed) {
+function updateStringIsActive() {
+  if (particles.length !== 4) throw new Error();
+
+  if (stringIsActive) {
+    if (grabbedParticle < 0 && grabbedParticle >= particles.length)
+      throw new Error();
+    const grabbedParticleObj = particles[grabbedParticle];
+    const distToMouse = getDistance(
+      grabbedParticleObj.px,
+      mouseX,
+      grabbedParticleObj.py,
+      mouseY
+    );
+    stringIsActive = distToMouse < 150;
+  } else {
+    let isClose = false;
+    for (let i = 1; i < particles.length; i++) {
+      const [x1, y1] = [particles[i - 1].px, particles[i - 1].py];
+      const [x2, y2] = [particles[i].px, particles[i].py];
+
+      if (existsInLine(x1, y1, x2, y2, mouseX, mouseY)) {
+        isClose = true;
+      }
+    }
+
+    stringIsActive = isClose;
+  }
+}
+
+function existsInLine(x1, y1, x2, y2, xMid, yMid) {
+  const distDiff = Math.abs(
+    getDistance(x1, xMid, y1, yMid) +
+      getDistance(x2, xMid, y2, yMid) -
+      getDistance(x1, x2, y1, y2)
+  );
+  return distDiff < 20;
+}
+
+function handleStringActive() {
+  if (!stringIsActive) {
     grabbedParticle = -1;
     return;
   }
@@ -154,7 +194,7 @@ var Particle = function Particle(x, y, size, color, isFixed) {
   this.color = color;
   this.isFixed = isFixed;
 
-  if (status == "basePoint") {
+  if (status === "basePoint") {
     this.isEdgePoint = false;
   } else {
     this.isEdgePoint = true;
