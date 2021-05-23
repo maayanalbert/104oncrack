@@ -1,34 +1,38 @@
-let vehicle;
-
-const landmarks = [];
-
 function setup() {
-  createCanvas(400, 400);
-  vehicle = new Vehicle(width / 2, height / 2);
-  landmarks.push(new LandMark(50, 10, 70, "Stamper"));
-  landmarks.push(new LandMark(270, 300, 150, "Carnegie Mellon"));
-  landmarks.push(new LandMark(350, 130, 120, "Avenue"));
-  textAlign(CENTER, CENTER);
+  createCanvas(window.innerWidth, window.innerHeight);
+  p1 = makeParticle(0, 0, 10, color(255), true);
+  p2 = makeParticle(0, 0, 10, color(255), false);
+  p3 = makeParticle(0, 0, 10, color(255), false);
+  p4 = makeParticle(
+    window.innerWidth / 2,
+    window.innerHeight / 2,
+    10,
+    color(255),
+    true
+  );
+
+  connectParticles(p1, p2, 50, 1, color(255));
+  connectParticles(p2, p3, 50, 1, color(255));
+  connectParticles(p3, p4, 50, 1, color(255));
 }
 
 function draw() {
-  background(220);
-  landmarks.forEach((landmark) => landmark.display());
+  background(0, 0, 0);
 
-  vehicle.seek(createVector(mouseX, mouseY));
-  vehicle.update();
-  vehicle.display();
-}
+  updateParticles(false, true);
 
-class LandMark {
-  constructor(x, y, size, name) {
-    this.location = createVector(x, y);
-    this.size = size;
-    this.name = name;
-  }
+  noFill();
+  stroke(255);
+  strokeWeight(1);
 
-  display() {
-    ellipse(this.location.x, this.location.y, this.size, this.size);
-    text(this.name, this.location.x, this.location.y);
-  }
+  bezier(
+    particles[0].px,
+    particles[0].py,
+    particles[1].px,
+    particles[1].py,
+    particles[2].px,
+    particles[2].py,
+    particles[3].px,
+    particles[3].py
+  );
 }
