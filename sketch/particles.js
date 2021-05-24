@@ -70,7 +70,7 @@ function updateStringIsActive() {
       grabbedParticleObj.py,
       mouseY
     );
-    stringIsActive = distToMouse < 150;
+    stringIsActive = distToMouse < 300;
   } else {
     let isClose = false;
     for (let i = 1; i < particles.length; i++) {
