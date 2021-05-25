@@ -1,8 +1,52 @@
-let s1;
+let threads = [];
+
+const thickness = 10;
+
+const pointDist = 300;
+
+const startX = window.innerWidth / 2 - pointDist / 2;
+const startY = window.innerHeight / 2;
+const endX = window.innerWidth / 2 + pointDist / 2;
+const endY = window.innerHeight / 2;
 
 function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
-  t1 = new Thread(0, 0, window.innerWidth, window.innerHeight, 1, color(255));
+
+  threads.push(
+    new Thread(
+      startX,
+      startY,
+      endX,
+      endY,
+      thickness,
+      color(255, 0, 0),
+      pointDist * 0.8
+    )
+  );
+
+  threads.push(
+    new Thread(
+      startX,
+      startY,
+      endX,
+      endY,
+      thickness,
+      color(0, 255, 0),
+      pointDist * 0.8
+    )
+  );
+
+  threads.push(
+    new Thread(
+      startX,
+      startY,
+      endX,
+      endY,
+      thickness,
+      color(0, 0, 255),
+      pointDist * 0.8
+    )
+  );
 }
 
 // use this maybe???
@@ -10,8 +54,11 @@ function setup() {
 // blend mode https://p5js.org/reference/#/p5/blendMode -> you want ADD
 
 function draw() {
-  background(0, 0, 0, 50);
+  blendMode(BLEND);
 
-  t1.update();
-  t1.render();
+  background(0, 0, 0, 100);
+  blendMode(ADD);
+
+  threads.forEach((thread) => thread.update());
+  threads.forEach((thread) => thread.render());
 }

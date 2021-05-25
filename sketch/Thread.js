@@ -1,5 +1,6 @@
 class Thread {
-  constructor(startX, startY, endX, endY, thickness, c) {
+  constructor(startX, startY, endX, endY, thickness, c, length) {
+    this.noiseOffset = random(-5, 5);
     this.thickness = thickness;
     this.color = c;
     this.particles = [];
@@ -7,19 +8,20 @@ class Thread {
     // The index in the particle array, of the one the user has clicked.
     this.grabbedParticle = -1;
     this.threadIsActive = false;
+    this.length = length;
 
     const pk1 = this.makeParticle(startX, startY, 10, color(255), true);
     const pk2 = this.makeParticle(0, 0, 10, color(255), false);
     const pk3 = this.makeParticle(0, 0, 10, color(255), false);
     const pk4 = this.makeParticle(endX, endY, 10, color(255), true);
 
-    this.connectParticles(pk1, pk2, 50, 1, color(255));
-    this.connectParticles(pk2, pk3, 50, 1, color(255));
-    this.connectParticles(pk3, pk4, 50, 1, color(255));
+    this.connectParticles(pk1, pk2, length / 3, 1, color(255));
+    this.connectParticles(pk2, pk3, length / 3, 1, color(255));
+    this.connectParticles(pk3, pk4, length / 3, 1, color(255));
   }
 
   update() {
-    this.updateParticles(false, true);
+    this.updateParticles(true, true);
   }
 
   render() {
@@ -73,7 +75,8 @@ class Thread {
   }
 
   updateParticles(gravityOn, boundariesOn = true) {
-    for (var i = 0; i < this.particles.length; i++) {
+    for (let i = 0; i < this.particles.length; i++) {
+      this.noiseOffset += NOISE_INCREMENT;
       this.addMutualRepulsion(i);
 
       this.particles[i].update(gravityOn, boundariesOn); // update all locations
@@ -160,6 +163,9 @@ class Thread {
     const p = this.particles[i];
     const px = p.px;
     const py = p.py;
+    const noiseForce = this.threadIsActive
+      ? (noise(this.noiseOffset) - 0.5) * NOISE_MULTIPLE
+      : 0;
 
     for (let j = 0; j < i; j++) {
       const q = this.particles[j];
@@ -177,8 +183,14 @@ class Thread {
       const repulsionForcex = componentInX * proportionToDistanceSquared;
       const repulsionForcey = componentInY * proportionToDistanceSquared;
 
-      p.addForce(repulsionForcex * q.size, repulsionForcey * q.size); // add in forces
-      q.addForce(-repulsionForcex * p.size, -repulsionForcey * p.size); // add in forces
+      p.addForce(
+        repulsionForcex * q.size + noiseForce,
+        repulsionForcey * q.size + noiseForce
+      ); // add in forces
+      q.addForce(
+        -repulsionForcex * p.size + noiseForce,
+        -repulsionForcey * p.size + noiseForce
+      ); // add in forces
     }
   }
 }

@@ -1,6 +1,3 @@
-const MAX_INACTIVE_MOUSE_DIST = 10;
-const MAX_ACTIVE_MOUSE_DIST = 300;
-
 function getDistance(x1, x2, y1, y2) {
   return sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2);
 }
