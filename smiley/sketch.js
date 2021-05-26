@@ -5,9 +5,9 @@ const thickness = 10;
 const pointDist = 300;
 
 const startX = window.innerWidth / 2 - pointDist / 2;
-const startY = window.innerHeight / 2;
+const startY = window.innerHeight / 2 + 75;
 const endX = window.innerWidth / 2 + pointDist / 2;
-const endY = window.innerHeight / 2;
+const endY = window.innerHeight / 2 + 75;
 
 function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
