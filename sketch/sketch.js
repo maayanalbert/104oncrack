@@ -1,34 +1,64 @@
-let vehicle;
+let threads = [];
 
-const landmarks = [];
+const thickness = 10;
+
+const pointDist = 300;
+
+const startX = window.innerWidth / 2 - pointDist / 2;
+const startY = window.innerHeight / 2;
+const endX = window.innerWidth / 2 + pointDist / 2;
+const endY = window.innerHeight / 2;
 
 function setup() {
-  createCanvas(400, 400);
-  vehicle = new Vehicle(width / 2, height / 2);
-  landmarks.push(new LandMark(50, 10, 70, "Stamper"));
-  landmarks.push(new LandMark(270, 300, 150, "Carnegie Mellon"));
-  landmarks.push(new LandMark(350, 130, 120, "Avenue"));
-  textAlign(CENTER, CENTER);
+  createCanvas(window.innerWidth, window.innerHeight);
+
+  threads.push(
+    new Thread(
+      startX,
+      startY,
+      endX,
+      endY,
+      thickness,
+      color(255, 0, 0),
+      pointDist * 0.8
+    )
+  );
+
+  threads.push(
+    new Thread(
+      startX,
+      startY,
+      endX,
+      endY,
+      thickness,
+      color(0, 255, 0),
+      pointDist * 0.8
+    )
+  );
+
+  threads.push(
+    new Thread(
+      startX,
+      startY,
+      endX,
+      endY,
+      thickness,
+      color(0, 0, 255),
+      pointDist * 0.8
+    )
+  );
 }
+
+// use this maybe???
+// https://p5js.org/reference/#/p5/bezierVertex
+// blend mode https://p5js.org/reference/#/p5/blendMode -> you want ADD
 
 function draw() {
-  background(220);
-  landmarks.forEach((landmark) => landmark.display());
+  blendMode(BLEND);
 
-  vehicle.seek(createVector(mouseX, mouseY));
-  vehicle.update();
-  vehicle.display();
-}
+  background(0, 0, 0, 100);
+  blendMode(ADD);
 
-class LandMark {
-  constructor(x, y, size, name) {
-    this.location = createVector(x, y);
-    this.size = size;
-    this.name = name;
-  }
-
-  display() {
-    ellipse(this.location.x, this.location.y, this.size, this.size);
-    text(this.name, this.location.x, this.location.y);
-  }
+  threads.forEach((thread) => thread.update());
+  threads.forEach((thread) => thread.render());
 }
