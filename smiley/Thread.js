@@ -11,8 +11,8 @@ class Thread {
     this.length = length;
 
     const pk1 = this.makeParticle(startX, startY, 10, color(255), true);
-    const pk2 = this.makeParticle(0, 0, 10, color(255), false);
-    const pk3 = this.makeParticle(0, 0, 10, color(255), false);
+    const pk2 = this.makeParticle(startX, startY, 10, color(255), false);
+    const pk3 = this.makeParticle(endX, endY, 10, color(255), false);
     const pk4 = this.makeParticle(endX, endY, 10, color(255), true);
 
     this.connectParticles(pk1, pk2, length / 3, 1, color(255));
