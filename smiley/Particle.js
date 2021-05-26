@@ -22,7 +22,7 @@ class Particle {
   update(gravityOn, boundariesOn) {
     const heightBorder = height - this.size / 2;
     if (gravityOn && this.py + 1 < heightBorder) {
-      this.addForce(0, 0.1); // gravity!
+      this.addForce(0, GRAVITY); // gravity!
     }
     this.vx *= this.damping;
     this.vy *= this.damping;

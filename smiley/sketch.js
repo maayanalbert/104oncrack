@@ -20,7 +20,7 @@ function setup() {
       endY,
       thickness,
       color(255, 0, 0),
-      pointDist * 0.8
+      pointDist * 1.2
     )
   );
 
@@ -32,7 +32,7 @@ function setup() {
       endY,
       thickness,
       color(0, 255, 0),
-      pointDist * 0.8
+      pointDist * 1.2
     )
   );
 
@@ -44,19 +44,21 @@ function setup() {
       endY,
       thickness,
       color(0, 0, 255),
-      pointDist * 0.8
+      pointDist * 1.2
     )
   );
 }
-
-// use this maybe???
-// https://p5js.org/reference/#/p5/bezierVertex
-// blend mode https://p5js.org/reference/#/p5/blendMode -> you want ADD
 
 function draw() {
   blendMode(BLEND);
 
   background(0, 0, 0, 100);
+
+  strokeWeight(0);
+  fill(255);
+  ellipse(startX, startY - 200, 100, 150);
+  ellipse(endX, startY - 200, 100, 150);
+
   blendMode(ADD);
 
   threads.forEach((thread) => thread.update());
