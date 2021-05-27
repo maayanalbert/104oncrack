@@ -9,8 +9,7 @@ const RANGE_VARIANCE = 1;
 let faderX = 1;
 
 function setup() {
-  // nothing much to see here
-  createCanvas(window.innerWidth, window.innerHeight); // this won't alter the window size
+  createCanvas(window.innerWidth, window.innerHeight);
   noStroke();
 }
 
@@ -66,7 +65,6 @@ function draw() {
     const angle = (i * 360) / PARTICLE_COUNT;
     pos = getPosition(angle);
 
-    // generate a random size
     const size = random(0, 10);
 
     purpleDot(pos.x, pos.y, size);
