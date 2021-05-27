@@ -7,14 +7,11 @@ const PARTICLE_COUNT = 300;
 const RADIUS = 100;
 const RANGE_VARIANCE = 1;
 let faderX = 1;
-let lastFaderX;
-let acceleration;
 
 function setup() {
   // nothing much to see here
   createCanvas(window.innerWidth, window.innerHeight); // this won't alter the window size
   noStroke();
-  // frameRate(20); // Attempt to refresh at starting FPS
 }
 
 function getMutatedCanvasPos() {
@@ -32,9 +29,7 @@ function getMutatedCanvasPos() {
 
 function getPosition(angle) {
   if (angle === 0) {
-    lastFaderX = faderX;
     faderX = faderX * 0.97 + (0.03 * getMutatedCanvasPos()) / width;
-    acceleration = abs(faderX - lastFaderX);
     randomSeed(ACT_RANDOM_SEED);
   }
 
@@ -54,20 +49,13 @@ function getPosition(angle) {
   return { x: x, y: y };
 }
 
-function sizeDot(x, y, size) {
+function blueDot(x, y, size) {
   fill(86, 186, 255, size * 0.1 * 255);
   ellipse(x, y, size, size);
 }
 
-function speedColorDot(x, y, size) {
-  if (!acceleration) {
-    acceleration = random(0, 0.01);
-  }
-
-  // set the opacity and color based on the speed the dots are moving
-  const opacity = max(100, acceleration * 200 * 255);
-  const colorOff = acceleration * 200;
-  fill(150 - colorOff * 40, 100 + colorOff * 60, 255, opacity);
+function purpleDot(x, y, size) {
+  fill(150, 100, 255, 75);
   ellipse(x, y, max(size, 5), max(size, 5));
 }
 
@@ -81,8 +69,8 @@ function draw() {
     // generate a random size
     const size = random(0, 10);
 
-    speedColorDot(pos.x, pos.y, size);
-    sizeDot(pos.x, pos.y, size);
+    purpleDot(pos.x, pos.y, size);
+    blueDot(pos.x, pos.y, size);
   }
 }
 
