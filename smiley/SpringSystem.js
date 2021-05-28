@@ -1,4 +1,4 @@
-class Thread {
+class SpringSystem {
   constructor(startX, startY, endX, endY, thickness, c, length) {
     this.noiseOffset = random(-5, 5);
     this.thickness = thickness;
@@ -7,7 +7,7 @@ class Thread {
     this.connections = {};
     // The index in the particle array, of the one the user has clicked.
     this.grabbedParticle = -1;
-    this.threadIsActive = false;
+    this.springSystemIsActive = false;
     this.length = length;
 
     const pk1 = this.makeParticle(startX, startY, 10, color(255), true);
@@ -82,7 +82,7 @@ class Thread {
       this.particles[i].update(gravityOn, boundariesOn); // update all locations
     }
 
-    this.threadIsActive = this.getNewThreadIsActive();
+    this.springSystemIsActive = this.getNewSpringSystemIsActive();
     this.handleMouseMove();
 
     Object.values(this.connections).forEach((connection) => {
@@ -100,13 +100,13 @@ class Thread {
     }
   }
 
-  getNewThreadIsActive() {
+  getNewSpringSystemIsActive() {
     if (isMobile()) {
       return mouseIsPressed;
     }
     if (this.particles.length !== 4) throw new Error();
 
-    if (this.threadIsActive) {
+    if (this.springSystemIsActive) {
       if (this.grabbedParticle < 0 && this.grabbedParticle >= particles.length)
         throw new Error();
       const grabbedParticleObj = this.particles[this.grabbedParticle];
@@ -132,7 +132,7 @@ class Thread {
   }
 
   handleMouseMove() {
-    if (!this.threadIsActive) {
+    if (!this.springSystemIsActive) {
       this.grabbedParticle = -1;
       return;
     }
@@ -165,7 +165,7 @@ class Thread {
     const p = this.particles[i];
     const px = p.px;
     const py = p.py;
-    const noiseForce = this.threadIsActive
+    const noiseForce = this.springSystemIsActive
       ? (noise(this.noiseOffset) - 0.5) * NOISE_MULTIPLE
       : 0;
 

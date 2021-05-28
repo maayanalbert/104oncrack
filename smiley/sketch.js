@@ -13,7 +13,7 @@ function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
 
   threads.push(
-    new Thread(
+    new SpringSystem(
       startX,
       startY,
       endX,
@@ -25,7 +25,7 @@ function setup() {
   );
 
   threads.push(
-    new Thread(
+    new SpringSystem(
       startX,
       startY,
       endX,
@@ -37,7 +37,7 @@ function setup() {
   );
 
   threads.push(
-    new Thread(
+    new SpringSystem(
       startX,
       startY,
       endX,
