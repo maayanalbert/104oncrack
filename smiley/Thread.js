@@ -82,7 +82,7 @@ class Thread {
       this.particles[i].update(gravityOn, boundariesOn); // update all locations
     }
 
-    this.updateStringIsActive();
+    this.threadIsActive = this.getNewThreadIsActive();
     this.handleMouseMove();
 
     Object.values(this.connections).forEach((connection) => {
@@ -100,7 +100,10 @@ class Thread {
     }
   }
 
-  updateStringIsActive() {
+  getNewThreadIsActive() {
+    if (isMobile()) {
+      return mouseIsPressed;
+    }
     if (this.particles.length !== 4) throw new Error();
 
     if (this.threadIsActive) {
@@ -113,19 +116,18 @@ class Thread {
         grabbedParticleObj.py,
         mouseY
       );
-      this.threadIsActive = distToMouse < MAX_ACTIVE_MOUSE_DIST;
+      return distToMouse < MAX_ACTIVE_MOUSE_DIST;
     } else {
-      let isClose = false;
       for (let i = 1; i < this.particles.length; i++) {
         const [x1, y1] = [this.particles[i - 1].px, this.particles[i - 1].py];
         const [x2, y2] = [this.particles[i].px, this.particles[i].py];
 
         if (existsInLine(x1, y1, x2, y2, mouseX, mouseY)) {
-          isClose = true;
+          return true;
         }
       }
 
-      this.threadIsActive = isClose;
+      return false;
     }
   }
 
