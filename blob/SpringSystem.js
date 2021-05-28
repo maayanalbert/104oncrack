@@ -50,26 +50,28 @@ class SpringSystem {
   render() {
     this.drawParticles();
 
-    // fill(255, 255, 255, 50);
-    // noStroke();
-    //
-    // beginShape();
-    //
-    // const first = this.particles[0];
-    // const last = this.particles[this.particles.length - 1];
-    // const midX = (first.px + last.px) / 2;
-    // const midY = (first.py + last.py) / 2;
-    //
-    // vertex(midX, midY);
-    //
-    // for (let i = 0; i < this.particles.length; i++) {
-    //   const cur = this.particles[i];
-    //   const next = this.particles[(i + 1) % 6];
-    //   const nextMidX = (cur.px + next.px) / 2;
-    //   const nextMidY = (cur.py + next.py) / 2;
-    //   bezierVertex(cur.px, cur.py, cur.px, cur.py, nextMidX, nextMidY);
-    // }
-    // endShape();
+    fill(255, 255, 255, 50);
+    noStroke();
+
+    beginShape();
+
+    const first = this.particles[0];
+    const last = this.particles[this.particles.length - 1];
+    const midX = (first.px + last.px) / 2;
+    const midY = (first.py + last.py) / 2;
+
+    vertex(midX, midY);
+
+    for (let i = 0; i < this.particles.length; i += 2) {
+      const cur = this.particles[i];
+      const next = this.particles[(i + 1) % 6];
+      const nextNext = this.particles[(i + 2) % 6];
+
+      const nextMidX = (next.px + nextNext.px) / 2;
+      const nextMidY = (next.py + nextNext.py) / 2;
+      bezierVertex(cur.px, cur.py, next.px, next.py, nextMidX, nextMidY);
+    }
+    endShape();
   }
 
   connectParticles(pk, qk, distance, lineWeight, lineColor) {
