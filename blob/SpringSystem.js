@@ -10,7 +10,7 @@ class SpringSystem {
     this.springSystemIsActive = false;
 
     const sideLen = 50;
-    const numSides = 6;
+    const numSides = 10;
 
     for (let i = 0; i < numSides; i++) {
       this.makeParticle(0, 0, 10, color(255), false);
@@ -48,7 +48,7 @@ class SpringSystem {
   }
 
   render() {
-    this.drawParticles();
+    // this.drawParticles();
 
     fill(255, 255, 255, 50);
     noStroke();
@@ -64,8 +64,8 @@ class SpringSystem {
 
     for (let i = 0; i < this.particles.length; i += 2) {
       const cur = this.particles[i];
-      const next = this.particles[(i + 1) % 6];
-      const nextNext = this.particles[(i + 2) % 6];
+      const next = this.particles[(i + 1) % this.particles.length];
+      const nextNext = this.particles[(i + 2) % this.particles.length];
 
       const nextMidX = (next.px + nextNext.px) / 2;
       const nextMidY = (next.py + nextNext.py) / 2;
@@ -199,7 +199,7 @@ class SpringSystem {
     const px = p.px;
     const py = p.py;
     const noiseForce = this.springSystemIsActive
-      ? (noise(this.noiseOffset) - 0.5) * NOISE_MULTIPLE
+      ? (noise(this.noiseOffset) - 0.5) * POS_NOISE_MULTIPLE
       : 0;
 
     for (let j = 0; j < i; j++) {

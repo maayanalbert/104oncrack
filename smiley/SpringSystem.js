@@ -75,8 +75,9 @@ class SpringSystem {
   }
 
   updateParticles(gravityOn, boundariesOn = true) {
+    this.noiseOffset += NOISE_INCREMENT;
+
     for (let i = 0; i < this.particles.length; i++) {
-      this.noiseOffset += NOISE_INCREMENT;
       this.addMutualRepulsion(i);
 
       this.particles[i].update(gravityOn, boundariesOn); // update all locations
@@ -166,7 +167,7 @@ class SpringSystem {
     const px = p.px;
     const py = p.py;
     const noiseForce = this.springSystemIsActive
-      ? (noise(this.noiseOffset) - 0.5) * NOISE_MULTIPLE
+      ? (noise(this.noiseOffset) - 0.5) * POS_NOISE_MULTIPLE
       : 0;
 
     for (let j = 0; j < i; j++) {

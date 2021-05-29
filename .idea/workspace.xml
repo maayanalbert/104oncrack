@@ -11,8 +11,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b982db2a-590e-479b-bdb7-1fc96293a808" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/vehicle/Vehicle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vehicle/constants.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vehicle/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vehicle/sketch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vehicle/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blob/SpringSystem.js" beforeDir="false" afterPath="$PROJECT_DIR$/blob/SpringSystem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smiley/SpringSystem.js" beforeDir="false" afterPath="$PROJECT_DIR$/smiley/SpringSystem.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +38,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/vehicle" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -48,6 +54,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/vehicle" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -64,7 +71,7 @@
       <workItem from="1620738818303" duration="594000" />
       <workItem from="1621883997020" duration="6055000" />
       <workItem from="1622076520503" duration="6606000" />
-      <workItem from="1622166046350" duration="6073000" />
+      <workItem from="1622166046350" duration="12482000" />
     </task>
     <servers />
   </component>
@@ -92,11 +99,11 @@
       <screen x="0" y="23" width="1680" height="949" />
     </state>
     <state x="466" y="163" key="SettingsEditor/0.23.1680.949@0.23.1680.949" timestamp="1620694921819" />
-    <state x="569" y="245" width="598" height="495" key="find.popup" timestamp="1622169237208">
+    <state x="569" y="245" width="598" height="522" key="find.popup" timestamp="1622261685735">
       <screen x="0" y="23" width="1680" height="952" />
     </state>
     <state x="569" y="243" width="598" height="490" key="find.popup/0.23.1680.944@0.23.1680.944" timestamp="1621908161296" />
-    <state x="569" y="245" width="598" height="495" key="find.popup/0.23.1680.952@0.23.1680.952" timestamp="1622169237208" />
+    <state x="569" y="245" width="598" height="522" key="find.popup/0.23.1680.952@0.23.1680.952" timestamp="1622261685735" />
     <state x="718" y="233" key="run.anything.popup" timestamp="1620697367687">
       <screen x="0" y="23" width="1680" height="949" />
     </state>
