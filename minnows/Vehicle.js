@@ -8,16 +8,18 @@ class Vehicle {
     this.maxspeed = 4;
     this.noiseOffsetX = random(-5, 5);
     this.noiseOffsetY = random(-5, 5);
-    this.r = 10;
-    this.length = this.r;
+    this.d = MINNOW_THICKNESS;
+    this.length = this.d;
   }
 
   update() {
     this.noiseOffsetX += NOISE_INCREMENT;
     this.noiseOffsetY += NOISE_INCREMENT;
 
-    const noiseForceX = (noise(this.noiseOffsetX) - 0.5) * POS_NOISE_MULTIPLE;
-    const noiseForceY = (noise(this.noiseOffsetY) - 0.5) * POS_NOISE_MULTIPLE;
+    const noiseForceX =
+      (noise(this.noiseOffsetX) - 0.5) * MINNOW_NOISE_MULTIPLE;
+    const noiseForceY =
+      (noise(this.noiseOffsetY) - 0.5) * MINNOW_NOISE_MULTIPLE;
 
     this.acceleration.add(createVector(noiseForceX, noiseForceY));
     this.velocity.add(this.acceleration);
@@ -28,8 +30,8 @@ class Vehicle {
       abs(this.velocity.x) + abs(this.velocity.y),
       0,
       this.maxspeed * 2,
-      this.r,
-      this.r * LEN_MULTIPLE
+      this.d,
+      this.d * LEN_MULTIPLE
     );
     this.acceleration.mult(0);
   }
@@ -63,13 +65,7 @@ class Vehicle {
     push();
     translate(this.location.x, this.location.y);
     rotate(theta);
-    ellipse(0, 0 + (this.length - this.r) / 2, this.r, this.length);
+    ellipse(0, 0 + (this.length - this.d) / 2, this.d, this.length);
     pop();
-  }
-
-  getDistance(location, target) {
-    return Math.sqrt(
-      Math.pow(location.x - target.x, 2) + Math.pow(location.y - target.y, 2)
-    );
   }
 }

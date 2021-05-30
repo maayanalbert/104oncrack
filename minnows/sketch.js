@@ -1,22 +1,49 @@
-let vehicles = [];
+let minnows = [];
+let food;
 
 function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
+  food = new Food();
 
-  for (let i = 0; i < sqrt(NUM_VEHICLES); i++) {
-    for (let j = 0; j < sqrt(NUM_VEHICLES); j++) {
-      vehicles.push(new Vehicle(i * 10, j * 10));
+  for (let i = 0; i < sqrt(NUM_MINNOWS); i++) {
+    for (let j = 0; j < sqrt(NUM_MINNOWS); j++) {
+      minnows.push(new Vehicle(i * 10, j * 10));
     }
   }
 }
 
 function draw() {
   background(103, 231, 215);
-  vehicles.forEach((vehicle) => vehicle.seek(createVector(mouseX, mouseY)));
-  vehicles.forEach((vehicle) => vehicle.update());
-  vehicles.forEach((vehicle) => vehicle.display());
+  minnows.forEach((vehicle) => vehicle.seek(createVector(mouseX, mouseY)));
+  minnows.forEach((vehicle) => vehicle.update());
+  minnows.forEach((vehicle) => vehicle.display());
+  removeOverlappingFoodParticles();
+  food.update();
+  food.render();
+}
 
-  noStroke();
-  fill(242, 201, 55);
-  ellipse(mouseX, mouseY, 50, 50);
+function removeOverlappingFoodParticles() {
+  for (let i = 0; i < minnows.length; i++) {
+    const minnow = minnows[i];
+    const index = food.findFirstOverlappingParticleIndex(
+      minnow.location.x,
+      minnow.location.y
+    );
+    if (index >= 0) {
+      food.removeParticle(index);
+    }
+  }
+}
+
+function minnowsAreOnMouse() {
+  for (let i = 0; i < minnows.length; i++) {
+    const minnow = minnows[i];
+    if (
+      getDistance(mouseX, minnow.location.x, mouseY, minnow.location.y) <
+      MINNOW_THICKNESS * 2
+    ) {
+      return true;
+    }
+  }
+  return false;
 }

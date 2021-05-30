@@ -199,7 +199,7 @@ class SpringSystem {
     const px = p.px;
     const py = p.py;
     const noiseForce = this.springSystemIsActive
-      ? (noise(this.noiseOffset) - 0.5) * POS_NOISE_MULTIPLE
+      ? (noise(this.noiseOffset) - 0.5) * MINNOW_NOISE_MULTIPLE
       : 0;
 
     for (let j = 0; j < i; j++) {
