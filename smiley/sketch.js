@@ -1,16 +1,20 @@
 let threads = [];
 
-const thickness = 10;
+const thickness = 8;
 
-const pointDist = 300;
-
-const startX = window.innerWidth / 2 - pointDist / 2;
-const startY = window.innerHeight / 2 + 75;
-const endX = window.innerWidth / 2 + pointDist / 2;
-const endY = window.innerHeight / 2 + 75;
+const pointDist = 250;
+let startX;
+let startY;
+let endX;
+let endY;
 
 function setup() {
-  createCanvas(window.innerWidth, window.innerHeight);
+  createCanvas(window.innerHeight, window.innerHeight);
+
+  startX = width / 2 - pointDist / 2;
+  startY = height / 2 + 75;
+  endX = width / 2 + pointDist / 2;
+  endY = height / 2 + 75;
 
   threads.push(
     new SpringSystem(
@@ -56,8 +60,8 @@ function draw() {
 
   strokeWeight(0);
   fill(255);
-  ellipse(startX, startY - 200, 100, 150);
-  ellipse(endX, startY - 200, 100, 150);
+  ellipse(startX, startY - 166, 83, 125);
+  ellipse(endX, startY - 166, 83, 125);
 
   blendMode(ADD);
 
