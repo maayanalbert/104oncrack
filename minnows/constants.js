@@ -10,3 +10,7 @@ const FOOD_MIN_LAG = 0.9;
 const FOOD_MAX_LAG = 0.95;
 const MINNOW_THICKNESS = 10;
 const COLOR_RANGE = 25;
+const MAX_FORCE = 0.1;
+const MAX_SPEED = 4;
+const FAST_SPEED_MULTIPLE = 2.5;
+const FAST_FORCE_MULTIPLE = 5;
