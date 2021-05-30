@@ -8,10 +8,6 @@ class Food {
   }
 
   update() {
-    if (frameCount % FOOD_DROP_RATE === 0) {
-      this.pauseSmallestParticle();
-    }
-
     if (
       this.particles.length < NUM_FOOD_PARTICLES &&
       minnowsAreOnMouse() === false
@@ -36,17 +32,6 @@ class Food {
     this.particles.splice(index, 1);
   }
 
-  pauseSmallestParticle() {
-    const movingParticles = this.particles.filter(
-      (particle) => particle.isMoving
-    );
-    if (movingParticles.length === 0) return;
-    const minParticle = movingParticles.reduce((prev, cur) =>
-      prev.d < cur.d ? prev : cur
-    );
-    minParticle.isMoving = false;
-  }
-
   render() {
     this.particles.forEach((particle) => particle.render());
   }
@@ -54,14 +39,11 @@ class Food {
 
 class Particle {
   constructor() {
-    this.isMoving = true;
     this.noiseOffsetX = random(-5, 5);
     this.noiseOffsetY = random(-5, 5);
     this.x = mouseX;
     this.y = mouseY;
-    this.d = !this.isMoving
-      ? FOOD_MIN_SIZE
-      : random(FOOD_MIN_SIZE, FOOD_MAX_SIZE);
+    this.d = random(FOOD_MIN_SIZE, FOOD_MAX_SIZE);
     this.posLag = map(
       this.d,
       FOOD_MIN_SIZE,
@@ -74,15 +56,12 @@ class Particle {
   update() {
     this.noiseOffsetX += NOISE_INCREMENT;
     this.noiseOffsetY += NOISE_INCREMENT;
-    const noiseMultiple = this.isMoving
-      ? FOOD_NOISE_MULTIPLE
-      : FOOD_NOISE_MULTIPLE_SMALL;
+    const noiseMultiple = FOOD_NOISE_MULTIPLE;
+
     const noisePosX = (noise(this.noiseOffsetX) - 0.5) * noiseMultiple;
     const noisePosY = (noise(this.noiseOffsetY) - 0.5) * noiseMultiple;
     this.x += noisePosX;
     this.y += noisePosY;
-
-    if (!this.isMoving) return;
 
     this.x = this.x * this.posLag + mouseX * (1 - this.posLag);
     this.y = this.y * this.posLag + mouseY * (1 - this.posLag);

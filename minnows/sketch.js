@@ -31,6 +31,7 @@ function removeOverlappingFoodParticles() {
     );
     if (index >= 0) {
       food.removeParticle(index);
+      return;
     }
   }
 }
