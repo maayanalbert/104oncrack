@@ -1,15 +1,15 @@
 // taken from: https://natureofcode.com/book/chapter-6-autonomous-agents/
 class Vehicle {
-  constructor(x, y, index) {
+  constructor(x, y) {
     this.location = createVector(x, y);
     this.velocity = createVector(0, 0);
     this.acceleration = createVector(0, 0);
     this.maxforce = 0.1;
     this.maxspeed = 4;
-    this.r = map(index, 0, NUM_VEHICLES, 1, 15);
     this.noiseOffsetX = random(-5, 5);
     this.noiseOffsetY = random(-5, 5);
-    this.index = index;
+    this.r = 10;
+    this.length = this.r;
   }
 
   update() {
@@ -24,6 +24,13 @@ class Vehicle {
     this.velocity.limit(this.maxspeed);
     this.location.add(this.velocity);
     this.location = this.boundWithinCanvas(this.location);
+    this.length = map(
+      abs(this.velocity.x) + abs(this.velocity.y),
+      0,
+      this.maxspeed * 2,
+      this.r,
+      this.r * LEN_MULTIPLE
+    );
     this.acceleration.mult(0);
   }
 
@@ -33,7 +40,7 @@ class Vehicle {
     return createVector(x, y);
   }
 
-  applyForce(force, distance) {
+  applyForce(force) {
     this.acceleration.add(force.x, force.y);
   }
 
@@ -43,18 +50,21 @@ class Vehicle {
     desired.mult(this.maxspeed);
     const steer = desired.sub(this.velocity);
     steer.limit(this.maxforce);
-    const distance = this.getDistance(this.location, target);
-    this.applyForce(steer, distance);
+    this.applyForce(steer);
   }
 
   display() {
-    const fillGradient = map(this.index, 0, NUM_VEHICLES, 255, 0);
-    const strokeGradient = map(this.index, 0, NUM_VEHICLES, 0, 255);
+    stroke(103, 231, 215);
+    strokeWeight(1);
+    // noStroke();
+    fill(0, 57, 50);
 
-    stroke(255, strokeGradient);
-    fill(70, 150, 250, strokeGradient);
-
-    ellipse(this.location.x, this.location.y, this.r, this.r);
+    const theta = this.velocity.heading() + PI / 2;
+    push();
+    translate(this.location.x, this.location.y);
+    rotate(theta);
+    ellipse(0, 0 + (this.length - this.r) / 2, this.r, this.length);
+    pop();
   }
 
   getDistance(location, target) {
