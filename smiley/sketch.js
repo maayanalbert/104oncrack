@@ -9,7 +9,7 @@ let endX;
 let endY;
 
 function setup() {
-  createCanvas(window.innerHeight, window.innerHeight);
+  createCanvas(window.innerWidth, window.innerHeight);
 
   startX = width / 2 - pointDist / 2;
   startY = height / 2 + 75;
