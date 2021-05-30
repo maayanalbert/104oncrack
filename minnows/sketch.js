@@ -20,7 +20,7 @@ function setup() {
 }
 
 function draw() {
-  background(103, 231, 215);
+  background(135, 236, 224);
   minnows.forEach((vehicle) => vehicle.seek(createVector(mouseX, mouseY)));
   minnows.forEach((vehicle) => vehicle.update());
   minnows.forEach((vehicle) => vehicle.display());

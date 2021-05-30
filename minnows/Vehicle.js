@@ -61,7 +61,7 @@ class Vehicle {
 
   display() {
     strokeWeight(1);
-    stroke(103, 231, 215);
+    stroke(135, 236, 224);
 
     if (this.isFast) {
       fill(228, 188, 44);
