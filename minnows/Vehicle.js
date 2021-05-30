@@ -1,29 +1,41 @@
 // taken from: https://natureofcode.com/book/chapter-6-autonomous-agents/
 class Vehicle {
-  constructor(x, y, index) {
+  constructor(x, y) {
     this.location = createVector(x, y);
     this.velocity = createVector(0, 0);
     this.acceleration = createVector(0, 0);
     this.maxforce = 0.1;
     this.maxspeed = 4;
-    this.r = map(index, 0, NUM_VEHICLES, 1, 15);
     this.noiseOffsetX = random(-5, 5);
     this.noiseOffsetY = random(-5, 5);
-    this.index = index;
+    this.d = MINNOW_THICKNESS;
+    this.length = this.d;
+    this.r = random(0 - COLOR_RANGE / 2, 0 + COLOR_RANGE / 2);
+    this.g = random(40 - COLOR_RANGE / 2, 40 + COLOR_RANGE / 2);
+    this.b = random(57 - COLOR_RANGE / 2, 57 + COLOR_RANGE / 2);
   }
 
   update() {
     this.noiseOffsetX += NOISE_INCREMENT;
     this.noiseOffsetY += NOISE_INCREMENT;
 
-    const noiseForceX = (noise(this.noiseOffsetX) - 0.5) * POS_NOISE_MULTIPLE;
-    const noiseForceY = (noise(this.noiseOffsetY) - 0.5) * POS_NOISE_MULTIPLE;
+    const noiseForceX =
+      (noise(this.noiseOffsetX) - 0.5) * MINNOW_NOISE_MULTIPLE;
+    const noiseForceY =
+      (noise(this.noiseOffsetY) - 0.5) * MINNOW_NOISE_MULTIPLE;
 
     this.acceleration.add(createVector(noiseForceX, noiseForceY));
     this.velocity.add(this.acceleration);
     this.velocity.limit(this.maxspeed);
     this.location.add(this.velocity);
     this.location = this.boundWithinCanvas(this.location);
+    this.length = map(
+      abs(this.velocity.x) + abs(this.velocity.y),
+      0,
+      this.maxspeed * 2,
+      this.d,
+      this.d * LEN_MULTIPLE
+    );
     this.acceleration.mult(0);
   }
 
@@ -33,7 +45,7 @@ class Vehicle {
     return createVector(x, y);
   }
 
-  applyForce(force, distance) {
+  applyForce(force) {
     this.acceleration.add(force.x, force.y);
   }
 
@@ -43,23 +55,21 @@ class Vehicle {
     desired.mult(this.maxspeed);
     const steer = desired.sub(this.velocity);
     steer.limit(this.maxforce);
-    const distance = this.getDistance(this.location, target);
-    this.applyForce(steer, distance);
+    this.applyForce(steer);
   }
 
   display() {
-    const fillGradient = map(this.index, 0, NUM_VEHICLES, 255, 0);
-    const strokeGradient = map(this.index, 0, NUM_VEHICLES, 0, 255);
+    stroke(103, 231, 215);
+    strokeWeight(1);
+    // noStroke();
+    // fill(0, 57, 50);
 
-    stroke(255, strokeGradient);
-    fill(70, 150, 250, strokeGradient);
-
-    ellipse(this.location.x, this.location.y, this.r, this.r);
-  }
-
-  getDistance(location, target) {
-    return Math.sqrt(
-      Math.pow(location.x - target.x, 2) + Math.pow(location.y - target.y, 2)
-    );
+    fill(this.r, this.g, this.b);
+    const theta = this.velocity.heading() + PI / 2;
+    push();
+    translate(this.location.x, this.location.y);
+    rotate(theta);
+    ellipse(0, 0 + (this.length - this.d) / 2, this.d, this.length);
+    pop();
   }
 }
