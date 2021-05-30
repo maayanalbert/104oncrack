@@ -1,11 +1,12 @@
 // taken from: https://natureofcode.com/book/chapter-6-autonomous-agents/
 class Vehicle {
-  constructor(x, y) {
+  constructor(x, y, isFast = false) {
+    this.isFast = isFast;
     this.location = createVector(x, y);
     this.velocity = createVector(0, 0);
     this.acceleration = createVector(0, 0);
-    this.maxforce = 0.1;
-    this.maxspeed = 4;
+    this.maxforce = isFast ? MAX_FORCE * FAST_FORCE_MULTIPLE : MAX_FORCE;
+    this.maxspeed = isFast ? MAX_SPEED * FAST_SPEED_MULTIPLE : MAX_SPEED;
     this.noiseOffsetX = random(-5, 5);
     this.noiseOffsetY = random(-5, 5);
     this.d = MINNOW_THICKNESS;
@@ -59,12 +60,15 @@ class Vehicle {
   }
 
   display() {
-    stroke(103, 231, 215);
     strokeWeight(1);
-    // noStroke();
-    // fill(0, 57, 50);
+    stroke(103, 231, 215);
 
-    fill(this.r, this.g, this.b);
+    if (this.isFast) {
+      fill(228, 188, 44);
+    } else {
+      fill(this.r, this.g, this.b);
+    }
+
     const theta = this.velocity.heading() + PI / 2;
     push();
     translate(this.location.x, this.location.y);
