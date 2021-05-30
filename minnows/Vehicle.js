@@ -10,6 +10,9 @@ class Vehicle {
     this.noiseOffsetY = random(-5, 5);
     this.d = MINNOW_THICKNESS;
     this.length = this.d;
+    this.r = random(0 - COLOR_RANGE / 2, 0 + COLOR_RANGE / 2);
+    this.g = random(40 - COLOR_RANGE / 2, 40 + COLOR_RANGE / 2);
+    this.b = random(57 - COLOR_RANGE / 2, 57 + COLOR_RANGE / 2);
   }
 
   update() {
@@ -59,8 +62,9 @@ class Vehicle {
     stroke(103, 231, 215);
     strokeWeight(1);
     // noStroke();
-    fill(0, 57, 50);
+    // fill(0, 57, 50);
 
+    fill(this.r, this.g, this.b);
     const theta = this.velocity.heading() + PI / 2;
     push();
     translate(this.location.x, this.location.y);
