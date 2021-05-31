@@ -11,7 +11,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b982db2a-590e-479b-bdb7-1fc96293a808" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/smiley/sketch.js" beforeDir="false" afterPath="$PROJECT_DIR$/smiley/sketch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/insane-personal-website.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/104oncrack.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,7 +20,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../104oncrack" />
   </component>
   <component name="ProjectId" id="1sMs5hGpKWH5JiQk5m0GYJfptrU" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
