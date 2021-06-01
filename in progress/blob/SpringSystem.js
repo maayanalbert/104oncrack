@@ -9,11 +9,17 @@ class SpringSystem {
     this.grabbedParticle = -1;
     this.springSystemIsActive = false;
 
-    const sideLen = 50;
+    const sideLen = 100;
     const numSides = 10;
 
     for (let i = 0; i < numSides; i++) {
-      this.makeParticle(0, 0, 10, color(255), false);
+      this.makeParticle(
+        random(0, width),
+        random(0, height),
+        10,
+        color(255),
+        false
+      );
     }
 
     for (let i = 0; i < numSides; i++) {
@@ -133,11 +139,9 @@ class SpringSystem {
   }
 
   getNewSpringSystemIsActive() {
-    return mouseIsPressed;
     if (isMobile()) {
       return mouseIsPressed;
     }
-    if (this.particles.length !== 4) throw new Error();
 
     if (this.springSystemIsActive) {
       if (this.grabbedParticle < 0 && this.grabbedParticle >= particles.length)
@@ -199,7 +203,7 @@ class SpringSystem {
     const px = p.px;
     const py = p.py;
     const noiseForce = this.springSystemIsActive
-      ? (noise(this.noiseOffset) - 0.5) * MINNOW_NOISE_MULTIPLE
+      ? (noise(this.noiseOffset) - 0.5) * NOISE_MULTIPLE
       : 0;
 
     for (let j = 0; j < i; j++) {

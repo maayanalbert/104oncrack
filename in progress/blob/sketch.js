@@ -1,8 +1,10 @@
-let springSystem;
+let springSystems = [];
 
 function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
-  springSystem = new SpringSystem();
+  for (let i = 0; i < 20; i++) {
+    springSystems.push(new SpringSystem());
+  }
 }
 
 function draw() {
@@ -10,6 +12,6 @@ function draw() {
 
   background(0, 0, 0);
 
-  springSystem.update();
-  springSystem.render();
+  springSystems.map((springSystem) => springSystem.update());
+  springSystems.map((springSystem) => springSystem.render());
 }
