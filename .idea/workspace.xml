@@ -32,7 +32,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/minnows" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../104oncrack/in progress" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -48,6 +48,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../104oncrack/in progress" />
       <recent name="$PROJECT_DIR$/minnows" />
       <recent name="$PROJECT_DIR$/vehicle" />
       <recent name="$PROJECT_DIR$" />
