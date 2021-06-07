@@ -11,8 +11,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b982db2a-590e-479b-bdb7-1fc96293a808" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/insane-personal-website.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/104oncrack.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/in progress/blob/Connection.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/in progress/blob/Particle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/in progress/blob/SpringSystem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/in progress/blob/constants.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/in progress/blob/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/in progress/blob/sketch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/in progress/blob/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/in progress/blob/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/in progress/p5AudioVisualizer 2/addons/p5.dom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/in progress/p5AudioVisualizer 2/addons/p5.dom.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/in progress/p5AudioVisualizer 2/addons/p5.sound.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/in progress/p5AudioVisualizer 2/addons/p5.sound.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/in progress/p5AudioVisualizer 2/empty-example/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/in progress/p5AudioVisualizer 2/empty-example/sketch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/in progress/p5AudioVisualizer 2/p5.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/in progress/p5AudioVisualizer 2/p5.global-mode.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/in progress/p5AudioVisualizer 2/p5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/in progress/p5AudioVisualizer 2/p5.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/in progress/p5AudioVisualizer 2/p5.pre-min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/in progress/warpTheWord/dustToDust.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/in progress/warpTheWord/dustToDust.mov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/in progress/warpTheWord/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/in progress/warpTheWord/p5.dom.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/in progress/warpTheWord/p5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/in progress/warpTheWord/p5.sound.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/in progress/warpTheWord/sketch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/in progress/warpTheWord/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ready to publish/milky-way/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ready to publish/milky-way/sketch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ready to publish/milky-way/style.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,7 +48,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../104oncrack" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1sMs5hGpKWH5JiQk5m0GYJfptrU" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -32,7 +60,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../104oncrack/in progress" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/in progress" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -48,7 +76,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/../104oncrack/in progress" />
+      <recent name="$PROJECT_DIR$/in progress" />
       <recent name="$PROJECT_DIR$/minnows" />
       <recent name="$PROJECT_DIR$/vehicle" />
       <recent name="$PROJECT_DIR$" />
@@ -68,6 +96,7 @@
       <workItem from="1621883997020" duration="6055000" />
       <workItem from="1622076520503" duration="6606000" />
       <workItem from="1622166046350" duration="22864000" />
+      <workItem from="1623032182795" duration="13000" />
     </task>
     <servers />
   </component>
