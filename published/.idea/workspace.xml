@@ -64,37 +64,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be49ab26-cd24-4e2a-b0bd-d70cb241bce7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../in progress/blob/Connection.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../in progress/blob/Particle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../in progress/blob/SpringSystem.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../in progress/blob/constants.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../in progress/blob/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../in progress/blob/sketch.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../in progress/blob/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../in progress/blob/utils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../in progress/p5AudioVisualizer 2/addons/p5.dom.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../in progress/p5AudioVisualizer 2/addons/p5.dom.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../in progress/p5AudioVisualizer 2/addons/p5.sound.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../in progress/p5AudioVisualizer 2/addons/p5.sound.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../in progress/p5AudioVisualizer 2/empty-example/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../in progress/p5AudioVisualizer 2/empty-example/sketch.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../in progress/p5AudioVisualizer 2/p5.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../in progress/p5AudioVisualizer 2/p5.global-mode.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../in progress/p5AudioVisualizer 2/p5.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../in progress/p5AudioVisualizer 2/p5.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../in progress/p5AudioVisualizer 2/p5.pre-min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../in progress/warpTheWord/dustToDust.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../in progress/warpTheWord/dustToDust.mov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../in progress/warpTheWord/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../in progress/warpTheWord/p5.dom.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../in progress/warpTheWord/p5.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../in progress/warpTheWord/p5.sound.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../in progress/warpTheWord/sketch.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../in progress/warpTheWord/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ready to publish/milky-way/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ready to publish/milky-way/sketch.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ready to publish/milky-way/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,6 +84,12 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -124,7 +100,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1623032208216</updated>
-      <workItem from="1623032209402" duration="42000" />
+      <workItem from="1623032209402" duration="650000" />
     </task>
     <servers />
   </component>
