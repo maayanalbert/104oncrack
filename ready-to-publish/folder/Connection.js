@@ -1,16 +1,15 @@
 class Connection {
-  constructor(p, q, distance, lineWeight, lineColor) {
+  constructor(p, q, distance, lineWeight) {
     this.distance = distance;
     this.p = p;
     this.q = q;
     this.lineWeight = lineWeight;
-    this.lineColor = lineColor;
   }
 
   render() {
     const p = this.p;
     const q = this.q;
-    stroke(this.lineColor);
+    stroke(r, g, b);
     strokeWeight(this.lineWeight);
     line(p.px, p.py, q.px, q.py);
   }
@@ -24,7 +23,7 @@ class Connection {
     const dh = sqrt(dx * dx + dy * dy);
     if (dh > 1) {
       const distention = dh - this.distance;
-      const restorativeForce = 0.05 * distention; // F = -kx
+      const restorativeForce = 0.005 * distention; // F = -kx
       const fx = (dx / dh) * restorativeForce;
       const fy = (dy / dh) * restorativeForce;
       p.addForce(-fx, -fy);

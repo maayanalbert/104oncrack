@@ -11,16 +11,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b982db2a-590e-479b-bdb7-1fc96293a808" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/in-progress/tetris/Connection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/in-progress/tetris/Particle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/in-progress/tetris/SpringSystem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/in-progress/tetris/constants.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/in-progress/tetris/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/in-progress/tetris/sketch.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/in-progress/tetris/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/in-progress/tetris/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/published/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/published/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/104oncrack.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/prettier.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/in-progress/tetris/Connection.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/in-progress/tetris/Particle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/in-progress/tetris/SpringSystem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/in-progress/tetris/constants.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/in-progress/tetris/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/in-progress/tetris/sketch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/in-progress/tetris/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/in-progress/tetris/utils.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +44,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/in-progress" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -78,7 +82,13 @@
       <workItem from="1622076520503" duration="6606000" />
       <workItem from="1622166046350" duration="22864000" />
       <workItem from="1623032182795" duration="13000" />
-      <workItem from="1623035479066" duration="2306000" />
+      <workItem from="1623035479066" duration="2767000" />
+      <workItem from="1623205933407" duration="1738000" />
+      <workItem from="1623295165578" duration="74000" />
+      <workItem from="1623295256694" duration="20000" />
+      <workItem from="1623295306397" duration="59000" />
+      <workItem from="1623295370463" duration="57000" />
+      <workItem from="1623295434166" duration="2731000" />
     </task>
     <servers />
   </component>

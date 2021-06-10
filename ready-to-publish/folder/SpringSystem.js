@@ -8,19 +8,35 @@ class SpringSystem {
     this.connections = {};
     this.grabbedParticle = -1;
     this.springSystemIsActive = false;
-    this.mouseClickOn = mouseClickOn
+    this.mouseClickOn = mouseClickOn;
+    this.isMoving = false;
   }
 
+  getParticlePosition(id) {
+    const p = this.particles[id];
+    return { px: p.px, py: p.py };
+  }
 
   update() {
     this.updateParticles(false, true);
+    this.isMoving = this.getNewIsMoving();
+  }
+
+  getNewIsMoving() {
+    for (let particle of this.particles) {
+      if (abs(particle.vx + particle.vy) > 1) {
+        return true;
+      }
+    }
+
+    return false;
   }
 
   render() {
     this.drawParticles();
   }
 
-  connectParticles(pk, qk, distance, lineWeight = 1, lineColor = color(255)) {
+  connectParticles(pk, qk, distance, lineWeight = 1) {
     if (
       pk < 0 ||
       pk >= this.particles.length ||
@@ -40,14 +56,13 @@ class SpringSystem {
       this.particles[pk],
       this.particles[qk],
       distance,
-      lineWeight,
-      lineColor
+      lineWeight
     );
     this.connections[id1] = connection;
   }
 
-  makeParticle(x = 0, y = 0, size = 10, fillColor = color(255), isFixed = false) {
-    const particle = new Particle(x, y, size, fillColor, isFixed);
+  makeParticle(x = 0, y = 0, size = 7, isFixed = false) {
+    const particle = new Particle(x, y, size, isFixed);
     this.particles.push(particle);
     return this.particles.length - 1;
   }
@@ -82,7 +97,7 @@ class SpringSystem {
     if (isMobile() || this.mouseClickOn) {
       return mouseIsPressed;
     }
-    
+
     if (this.springSystemIsActive) {
       if (this.grabbedParticle < 0 && this.grabbedParticle >= particles.length)
         throw new Error();

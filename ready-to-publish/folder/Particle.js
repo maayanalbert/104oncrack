@@ -1,12 +1,11 @@
 class Particle {
-  constructor(x, y, size, color, isFixed) {
+  constructor(x, y, size, isFixed) {
     this.px = x;
     this.py = y;
     this.vx = 0;
     this.vy = 0;
     this.damping = 0.96;
     this.size = size;
-    this.color = color;
     this.isFixed = isFixed;
   }
 
@@ -92,7 +91,7 @@ class Particle {
 
   render() {
     strokeWeight(0);
-    fill(this.color);
+    fill(r, g, b);
     ellipse(this.px, this.py, this.size, this.size);
   }
 }
