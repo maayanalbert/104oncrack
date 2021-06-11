@@ -1,15 +1,20 @@
 class Connection {
-  constructor(p, q, distance, lineWeight) {
+  constructor(p, q, distance, lineWeight, isFaded) {
     this.distance = distance;
     this.p = p;
     this.q = q;
     this.lineWeight = lineWeight;
+    this.isFaded = isFaded;
   }
 
   render() {
     const p = this.p;
     const q = this.q;
-    stroke(r, g, b);
+    stroke(
+      this.isFaded ? r / 2 : r,
+      this.isFaded ? g / 2 : g,
+      this.isFaded ? b / 2 : b
+    );
     strokeWeight(this.lineWeight);
     line(p.px, p.py, q.px, q.py);
   }

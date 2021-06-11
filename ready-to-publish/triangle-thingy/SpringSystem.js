@@ -2,7 +2,7 @@ class SpringSystem {
   constructor(mouseClickOn = false) {
     angleMode(DEGREES);
     this.noiseOffset = random(-5, 5);
-    this.thickness = 1;
+    this.thickness = 5;
     this.color = color(255, 255, 255);
     this.particles = [];
     this.connections = {};
@@ -36,7 +36,7 @@ class SpringSystem {
     this.drawParticles();
   }
 
-  connectParticles(pk, qk, distance, lineWeight = 1) {
+  connectParticles(pk, qk, distance, isFaded) {
     if (
       pk < 0 ||
       pk >= this.particles.length ||
@@ -56,12 +56,18 @@ class SpringSystem {
       this.particles[pk],
       this.particles[qk],
       distance,
-      lineWeight
+      this.thickness,
+      isFaded
     );
     this.connections[id1] = connection;
   }
 
-  makeParticle(x = 0, y = 0, size = 7, isFixed = false) {
+  makeParticle(
+    x = width / 2 + random(-5, 5),
+    y = height / 2 + random(-5, 5),
+    size = 0,
+    isFixed = false
+  ) {
     const particle = new Particle(x, y, size, isFixed);
     this.particles.push(particle);
     return this.particles.length - 1;
@@ -178,12 +184,12 @@ class SpringSystem {
       const repulsionForcey = componentInY * proportionToDistanceSquared;
 
       p.addForce(
-        repulsionForcex * q.size + noiseForce,
-        repulsionForcey * q.size + noiseForce
+        repulsionForcex * 10 + noiseForce,
+        repulsionForcey * 10 + noiseForce
       ); // add in forces
       q.addForce(
-        -repulsionForcex * p.size + noiseForce,
-        -repulsionForcey * p.size + noiseForce
+        -repulsionForcex * 10 + noiseForce,
+        -repulsionForcey * 10 + noiseForce
       ); // add in forces
     }
   }

@@ -1,5 +1,5 @@
 let springSystem;
-const sideLen = 50;
+const sideLen = 75;
 let corners;
 
 let rOff;
@@ -18,7 +18,7 @@ function setup() {
   bOff = random(-5, 5);
 
   springSystem = new SpringSystem(true);
-  corners = addRect(springSystem, sideLen * 3, sideLen);
+  corners = addRect(springSystem, sideLen * 3, sideLen * 2);
 }
 
 function addRect(springSystem, horizSideLen, vertSideLen, corners) {
@@ -27,14 +27,16 @@ function addRect(springSystem, horizSideLen, vertSideLen, corners) {
   const bottomLeft = corners?.bottomLeft ?? springSystem.makeParticle();
   const bottomRight = corners?.bottomRight ?? springSystem.makeParticle();
 
-  springSystem.connectParticles(topLeft, topRight, horizSideLen);
-  springSystem.connectParticles(bottomLeft, bottomRight, horizSideLen);
-  springSystem.connectParticles(topLeft, bottomLeft, vertSideLen);
-  springSystem.connectParticles(topRight, bottomRight, vertSideLen);
+  springSystem.connectParticles(bottomLeft, bottomRight, horizSideLen, true);
+  springSystem.connectParticles(topLeft, bottomLeft, vertSideLen, true);
 
   const diagLen = getHypotenuseOfRightTriangle(horizSideLen, vertSideLen);
-  springSystem.connectParticles(topRight, bottomLeft, diagLen);
-  springSystem.connectParticles(bottomRight, topLeft, diagLen);
+  springSystem.connectParticles(topRight, bottomLeft, horizSideLen, true);
+  springSystem.connectParticles(bottomRight, topLeft, vertSideLen, false);
+
+  springSystem.connectParticles(topRight, bottomRight, vertSideLen, false);
+
+  springSystem.connectParticles(topLeft, topRight, horizSideLen, false);
 
   return { topLeft, topRight, bottomLeft, bottomRight };
 }

@@ -11,8 +11,8 @@ class Particle {
 
   // Add a force in. One step of Euler integration.
   addForce(fx, fy) {
-    const ax = fx / (this.size * 0.1);
-    const ay = fy / (this.size * 0.1);
+    const ax = fx;
+    const ay = fy;
     this.vx += ax;
     this.vy += ay;
   }
