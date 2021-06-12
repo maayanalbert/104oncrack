@@ -6,7 +6,8 @@
     background: rgb(255, 255, 255);
 }
 
-html *
-{
-    font-family: Helvetica;
+a { color: #0000EE; }
+
+html * {
+    font-family: Helvetica, sans-serif;
 }

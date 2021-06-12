@@ -1,4 +1,4 @@
-import { Sketch } from "./sketches";
+import { Sketch } from "../sketches";
 
 interface Props {
   sketch: Sketch;
