@@ -10,7 +10,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b982db2a-590e-479b-bdb7-1fc96293a808" name="Default Changelist" comment="" />
+    <list default="true" id="b982db2a-590e-479b-bdb7-1fc96293a808" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/interactive-site/craco.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interactive-site/src/SketchFrame.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interactive-site/src/sketches.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interactive-site/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/interactive-site/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interactive-site/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/interactive-site/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/interactive-site/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interactive-site/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/interactive-site/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interactive-site/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/interactive-site/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/interactive-site/yarn.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,7 +51,7 @@
     <property name="prettierjs.PrettierConfiguration.Package" value="$USER_HOME$/.nvm/versions/node/v15.8.0/lib/node_modules/prettier" />
     <property name="run.prettier.on.save" value="true" />
     <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
-    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/interactive-site/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -75,6 +86,8 @@
       <workItem from="1623295370463" duration="57000" />
       <workItem from="1623295434166" duration="3500000" />
       <workItem from="1623384218608" duration="3495000" />
+      <workItem from="1623523013664" duration="9078000" />
+      <workItem from="1623536404584" duration="14000" />
     </task>
     <servers />
   </component>
