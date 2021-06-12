@@ -3,7 +3,7 @@ import React from "react";
 export default function Title() {
   return (
     <div className="pt-28 pb-16">
-      <div className="text-9xl -ml-4">104oncrack</div>
+      <div className="text-9xl -ml-8">104oncrack</div>
       <div className="text-3xl font-light pt-2">
         because 2 semesters of{" "}
         <a href="http://cmuems.com/2015c/" target="_blank">

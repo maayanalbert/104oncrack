@@ -11,33 +11,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b982db2a-590e-479b-bdb7-1fc96293a808" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/interactive-gallery/src/components/Gallery.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interactive-gallery/src/components/Title.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interactive-gallery/src/galleryDimensions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interactive-gallery/src/components/Bottom.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interactive-site/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/interactive-gallery/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interactive-site/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/interactive-gallery/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interactive-site/craco.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/interactive-gallery/craco.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interactive-site/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/interactive-gallery/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interactive-site/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/interactive-gallery/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interactive-site/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/interactive-gallery/public/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interactive-site/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/interactive-gallery/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interactive-site/public/logo192.png" beforeDir="false" afterPath="$PROJECT_DIR$/interactive-gallery/public/logo192.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interactive-site/public/logo512.png" beforeDir="false" afterPath="$PROJECT_DIR$/interactive-gallery/public/logo512.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interactive-site/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/interactive-gallery/public/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interactive-site/public/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/interactive-gallery/public/robots.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interactive-site/src/App.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/interactive-gallery/src/App.test.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interactive-site/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/interactive-gallery/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interactive-site/src/SketchFrame.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/interactive-gallery/src/components/SketchFrame.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interactive-site/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/interactive-gallery/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interactive-site/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/interactive-gallery/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interactive-site/src/react-app-env.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/interactive-gallery/src/react-app-env.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interactive-site/src/reportWebVitals.ts" beforeDir="false" afterPath="$PROJECT_DIR$/interactive-gallery/src/reportWebVitals.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interactive-site/src/setupTests.ts" beforeDir="false" afterPath="$PROJECT_DIR$/interactive-gallery/src/setupTests.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interactive-site/src/sketches.ts" beforeDir="false" afterPath="$PROJECT_DIR$/interactive-gallery/src/sketches.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interactive-site/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/interactive-gallery/tailwind.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interactive-site/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/interactive-gallery/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interactive-site/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/interactive-gallery/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interactive-gallery/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/interactive-gallery/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interactive-gallery/src/components/Title.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/interactive-gallery/src/components/Title.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +34,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/interactive-gallery/src/components" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -72,11 +49,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/interactive-gallery/src/components" />
       <recent name="$PROJECT_DIR$/in-progress" />
       <recent name="$PROJECT_DIR$/in progress" />
       <recent name="$PROJECT_DIR$/minnows" />
       <recent name="$PROJECT_DIR$/vehicle" />
-      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/interactive-gallery/src" />
@@ -108,7 +85,7 @@
       <workItem from="1623384218608" duration="3495000" />
       <workItem from="1623523013664" duration="9078000" />
       <workItem from="1623536404584" duration="14000" />
-      <workItem from="1623537167171" duration="2812000" />
+      <workItem from="1623537167171" duration="3240000" />
     </task>
     <servers />
   </component>
