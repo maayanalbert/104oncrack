@@ -21,8 +21,12 @@ export default function SketchFrame({ sketch }: Props) {
     >
       <div className="relative">
         <span
-          className="w-full h-full absolute"
-          style={{ background: "rgb(0, 0, 0)" }}
+          className="absolute"
+          style={{
+            background: "rgb(0, 0, 0)",
+            width: FRAME_SIZE,
+            height: FRAME_SIZE,
+          }}
         />
 
         <iframe

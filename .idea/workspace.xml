@@ -11,7 +11,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b982db2a-590e-479b-bdb7-1fc96293a808" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/docs/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/src/components/SketchFrame.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/docs/src/components/SketchFrame.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +83,7 @@
       <workItem from="1623384218608" duration="3495000" />
       <workItem from="1623523013664" duration="9078000" />
       <workItem from="1623536404584" duration="14000" />
-      <workItem from="1623537167171" duration="16399000" />
+      <workItem from="1623537167171" duration="16547000" />
     </task>
     <servers />
   </component>
