@@ -2,22 +2,19 @@ import { sketches } from "../sketches";
 import React from "react";
 import SketchFrame from "./SketchFrame";
 import {
-  calcGalleryWidth,
+  calcNeededWidthWidth,
   GAP_SIZE,
   MIN_NUM_COLS,
   NUM_COLS,
-  SIDE_PADDING_IN_UNITS,
-  UNITS_TO_PIXELS,
 } from "../galleryDimensions";
 import useEventListener from "../useEventListener";
 
 export default function Gallery() {
-  const [numCols, setNumCols] = React.useState<number>(NUM_COLS);
+  const [numCols, setNumCols] = React.useState<number>(
+    window.innerWidth > calcNeededWidthWidth(NUM_COLS) ? NUM_COLS : MIN_NUM_COLS
+  );
   useEventListener("resize", () => {
-    if (
-      window.innerWidth >
-      calcGalleryWidth(NUM_COLS) + SIDE_PADDING_IN_UNITS * UNITS_TO_PIXELS * 2
-    ) {
+    if (window.innerWidth > calcNeededWidthWidth(NUM_COLS)) {
       setNumCols(NUM_COLS);
     } else {
       setNumCols(MIN_NUM_COLS);
