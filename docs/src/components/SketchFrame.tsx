@@ -30,10 +30,11 @@ export default function SketchFrame({ sketch }: Props) {
         />
 
         <iframe
-          className="absolute z-1"
+          className="absolute"
           loading="lazy"
           src={sketch.url}
           title={sketch.name}
+          frameBorder="0"
           style={{
             transform: `scale(${scale})`,
             transformOrigin: "top left",
