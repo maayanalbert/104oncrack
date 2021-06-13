@@ -34,12 +34,11 @@ export default function SketchFrame({ sketch }: Props) {
           loading="lazy"
           src={sketch.url}
           title={sketch.name}
-          frameBorder="0"
           style={{
             transform: `scale(${scale})`,
             transformOrigin: "top left",
-            width: FRAME_SIZE / scale,
-            height: FRAME_SIZE / scale,
+            width: Math.ceil(FRAME_SIZE / scale),
+            height: Math.ceil(FRAME_SIZE / scale),
           }}
         />
         <Transition
