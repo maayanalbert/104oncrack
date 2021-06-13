@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/104oncrack/static/css/main.3c2ca0d2.chunk.css",
-    "main.js": "/104oncrack/static/js/main.e1770b2a.chunk.js",
-    "main.js.map": "/104oncrack/static/js/main.e1770b2a.chunk.js.map",
+    "main.css": "/104oncrack/static/css/main.20a447b7.chunk.css",
+    "main.js": "/104oncrack/static/js/main.e4972ee5.chunk.js",
+    "main.js.map": "/104oncrack/static/js/main.e4972ee5.chunk.js.map",
     "runtime-main.js": "/104oncrack/static/js/runtime-main.6105c1df.js",
     "runtime-main.js.map": "/104oncrack/static/js/runtime-main.6105c1df.js.map",
     "static/js/2.3a5269e2.chunk.js": "/104oncrack/static/js/2.3a5269e2.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.fbc70908.chunk.js": "/104oncrack/static/js/3.fbc70908.chunk.js",
     "static/js/3.fbc70908.chunk.js.map": "/104oncrack/static/js/3.fbc70908.chunk.js.map",
     "index.html": "/104oncrack/index.html",
-    "static/css/main.3c2ca0d2.chunk.css.map": "/104oncrack/static/css/main.3c2ca0d2.chunk.css.map",
+    "static/css/main.20a447b7.chunk.css.map": "/104oncrack/static/css/main.20a447b7.chunk.css.map",
     "static/js/2.3a5269e2.chunk.js.LICENSE.txt": "/104oncrack/static/js/2.3a5269e2.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.6105c1df.js",
     "static/js/2.3a5269e2.chunk.js",
-    "static/css/main.3c2ca0d2.chunk.css",
-    "static/js/main.e1770b2a.chunk.js"
+    "static/css/main.20a447b7.chunk.css",
+    "static/js/main.e4972ee5.chunk.js"
   ]
 }
