@@ -1,3 +1,4 @@
+// based off: http://cmuems.com/2015c/more-springs/
 class Connection {
   constructor(p, q, distance, lineWeight, isFaded) {
     this.distance = distance;

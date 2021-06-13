@@ -11,13 +11,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b982db2a-590e-479b-bdb7-1fc96293a808" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/interactive-gallery/src/openInNewTab.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interactive-gallery/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/interactive-gallery/public/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interactive-gallery/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/interactive-gallery/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interactive-gallery/public/logo192.png" beforeDir="false" afterPath="$PROJECT_DIR$/interactive-gallery/public/logo192.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interactive-gallery/public/logo512.png" beforeDir="false" afterPath="$PROJECT_DIR$/interactive-gallery/public/logo512.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interactive-gallery/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/interactive-gallery/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interactive-gallery/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/interactive-gallery/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interactive-gallery/src/components/Gallery.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/interactive-gallery/src/components/Gallery.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/interactive-gallery/src/components/SketchFrame.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/interactive-gallery/src/components/SketchFrame.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/interactive-gallery/src/components/Title.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/interactive-gallery/src/components/Title.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interactive-gallery/src/galleryDimensions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/interactive-gallery/src/galleryDimensions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interactive-gallery/src/sketches.ts" beforeDir="false" afterPath="$PROJECT_DIR$/interactive-gallery/src/sketches.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interactive-gallery/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/interactive-gallery/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sketches/published/minnows/Vehicle.js" beforeDir="false" afterPath="$PROJECT_DIR$/sketches/published/minnows/Vehicle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sketches/published/smiley/Connection.js" beforeDir="false" afterPath="$PROJECT_DIR$/sketches/published/smiley/Connection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sketches/published/smiley/Particle.js" beforeDir="false" afterPath="$PROJECT_DIR$/sketches/published/smiley/Particle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sketches/published/smiley/SpringSystem.js" beforeDir="false" afterPath="$PROJECT_DIR$/sketches/published/smiley/SpringSystem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sketches/published/triangle-thingy/Connection.js" beforeDir="false" afterPath="$PROJECT_DIR$/sketches/published/triangle-thingy/Connection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sketches/published/triangle-thingy/Particle.js" beforeDir="false" afterPath="$PROJECT_DIR$/sketches/published/triangle-thingy/Particle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sketches/published/triangle-thingy/SpringSystem.js" beforeDir="false" afterPath="$PROJECT_DIR$/sketches/published/triangle-thingy/SpringSystem.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +98,7 @@
       <workItem from="1623384218608" duration="3495000" />
       <workItem from="1623523013664" duration="9078000" />
       <workItem from="1623536404584" duration="14000" />
-      <workItem from="1623537167171" duration="5326000" />
+      <workItem from="1623537167171" duration="9832000" />
     </task>
     <servers />
   </component>

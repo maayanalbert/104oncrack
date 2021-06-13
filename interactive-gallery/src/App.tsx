@@ -1,13 +1,18 @@
 import React from "react";
 import Gallery from "./components/Gallery";
-import { GALLERY_WIDTH } from "./galleryDimensions";
+import { GALLERY_WIDTH, MIN_GALLERY_WIDTH } from "./galleryDimensions";
 import Title from "./components/Title";
 import Bottom from "./components/Bottom";
 
 function App() {
   return (
-    <div className="h-screen flex justify-center">
-      <div style={{ width: GALLERY_WIDTH }}>
+    <div className="h-screen flex justify-center px-16">
+      <div
+        style={{
+          width: GALLERY_WIDTH,
+          minWidth: MIN_GALLERY_WIDTH,
+        }}
+      >
         <Title />
         <Gallery />
         <Bottom />

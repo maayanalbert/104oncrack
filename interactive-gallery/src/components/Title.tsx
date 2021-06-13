@@ -21,7 +21,7 @@ export default function Title() {
         </a>{" "}
         -{" "}
         <a
-          href="github.com/maayanalbert/104oncrack"
+          href="https://www.github.com/maayanalbert/104oncrack"
           target="_blank"
           rel="noreferrer"
         >

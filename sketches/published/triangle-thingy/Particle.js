@@ -1,3 +1,4 @@
+// based off: http://cmuems.com/2015c/more-springs/
 class Particle {
   constructor(x, y, size, isFixed) {
     this.px = x;

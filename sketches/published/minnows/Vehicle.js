@@ -1,4 +1,4 @@
-// taken from: https://natureofcode.com/book/chapter-6-autonomous-agents/
+// based off: https://natureofcode.com/book/chapter-6-autonomous-agents/
 class Vehicle {
   constructor(x, y, isFast = false) {
     this.isFast = isFast;

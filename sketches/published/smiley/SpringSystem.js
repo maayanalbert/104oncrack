@@ -1,3 +1,4 @@
+// based off: http://cmuems.com/2015c/more-springs/
 class SpringSystem {
   constructor(startX, startY, endX, endY, thickness, c, length) {
     this.noiseOffset = random(-5, 5);
