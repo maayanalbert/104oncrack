@@ -11,9 +11,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b982db2a-590e-479b-bdb7-1fc96293a808" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/interactive-gallery/src/components/Bottom.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interactive-gallery/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/interactive-gallery/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interactive-gallery/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/interactive-gallery/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interactive-gallery/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/interactive-gallery/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interactive-gallery/public/logo192.png" beforeDir="false" afterPath="$PROJECT_DIR$/interactive-gallery/public/logo192.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interactive-gallery/public/logo512.png" beforeDir="false" afterPath="$PROJECT_DIR$/interactive-gallery/public/logo512.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interactive-gallery/src/components/SketchFrame.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/interactive-gallery/src/components/SketchFrame.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/interactive-gallery/src/components/Title.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/interactive-gallery/src/components/Title.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,7 +88,7 @@
       <workItem from="1623384218608" duration="3495000" />
       <workItem from="1623523013664" duration="9078000" />
       <workItem from="1623536404584" duration="14000" />
-      <workItem from="1623537167171" duration="3240000" />
+      <workItem from="1623537167171" duration="5326000" />
     </task>
     <servers />
   </component>
@@ -103,28 +106,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="584" y="309" key="EditFileWatcherDialog" timestamp="1620694808614">
-      <screen x="0" y="23" width="1680" height="949" />
-    </state>
-    <state x="584" y="309" key="EditFileWatcherDialog/0.23.1680.949@0.23.1680.949" timestamp="1620694808614" />
-    <state x="466" y="163" key="SettingsEditor" timestamp="1620694921819">
-      <screen x="0" y="23" width="1680" height="949" />
-    </state>
-    <state x="466" y="163" key="SettingsEditor/0.23.1680.949@0.23.1680.949" timestamp="1620694921819" />
-    <state x="569" y="245" width="598" height="522" key="find.popup" timestamp="1622408189831">
-      <screen x="0" y="23" width="1680" height="952" />
-    </state>
-    <state x="569" y="243" width="598" height="490" key="find.popup/0.23.1680.944@0.23.1680.944" timestamp="1621908161296" />
-    <state x="569" y="245" width="598" height="522" key="find.popup/0.23.1680.952@0.23.1680.952" timestamp="1622408189830" />
-    <state x="718" y="233" key="run.anything.popup" timestamp="1620697367687">
-      <screen x="0" y="23" width="1680" height="949" />
-    </state>
-    <state x="718" y="233" key="run.anything.popup/0.23.1680.949@0.23.1680.949" timestamp="1620697367687" />
-    <state x="659" y="226" width="670" height="676" key="search.everywhere.popup" timestamp="1621734887646">
-      <screen x="0" y="23" width="1680" height="949" />
-    </state>
-    <state x="659" y="226" width="670" height="676" key="search.everywhere.popup/0.23.1680.949@0.23.1680.949" timestamp="1621734887646" />
   </component>
 </project>
