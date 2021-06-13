@@ -1,6 +1,6 @@
 import { Sketch } from "../sketches";
 import React from "react";
-import { FRAME_SIZE, MIN_FRAME_SIZE } from "../galleryDimensions";
+import { FRAME_SIZE } from "../galleryDimensions";
 import { Transition } from "@headlessui/react";
 import openInNewTab from "../openInNewTab";
 
@@ -17,16 +17,9 @@ export default function SketchFrame({ sketch }: Props) {
       className="overflow-hidden"
       onMouseOver={() => setMouseOver(true)}
       onMouseLeave={() => setMouseOver(false)}
+      style={{ width: FRAME_SIZE, height: FRAME_SIZE }}
     >
-      <div
-        style={{
-          width: FRAME_SIZE,
-          height: FRAME_SIZE,
-          minWidth: MIN_FRAME_SIZE,
-          minHeight: MIN_FRAME_SIZE,
-        }}
-        className="relative"
-      >
+      <div className="relative">
         <span
           className="w-full h-full absolute"
           style={{ background: "rgb(0, 0, 0)" }}
@@ -42,8 +35,6 @@ export default function SketchFrame({ sketch }: Props) {
             transformOrigin: "top left",
             width: FRAME_SIZE / scale,
             height: FRAME_SIZE / scale,
-            minWidth: MIN_FRAME_SIZE / scale,
-            minHeight: MIN_FRAME_SIZE / scale,
           }}
         />
         <Transition
