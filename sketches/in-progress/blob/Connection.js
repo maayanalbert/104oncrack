@@ -24,7 +24,7 @@ class Connection {
     const dh = sqrt(dx * dx + dy * dy);
     if (dh > 1) {
       const distention = dh - this.distance;
-      const restorativeForce = 0.05 * distention; // F = -kx
+      const restorativeForce = 0.01 * distention; // F = -kx
       const fx = (dx / dh) * restorativeForce;
       const fy = (dy / dh) * restorativeForce;
       p.addForce(-fx, -fy);

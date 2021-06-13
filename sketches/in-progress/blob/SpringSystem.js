@@ -1,21 +1,21 @@
 class SpringSystem {
-  constructor() {
+  constructor(numSides, sideLen, c) {
     angleMode(DEGREES);
-    this.noiseOffset = random(-5, 5);
     this.thickness = 1;
-    this.color = color(255, 255, 255);
+    this.color = c;
+    this.color.setAlpha(50);
     this.particles = [];
     this.connections = {};
     this.grabbedParticle = -1;
     this.springSystemIsActive = false;
 
-    const sideLen = 100;
-    const numSides = 10;
+    const startX = random(width / 5, (4 * width) / 5);
+    const startY = random(height / 5, (4 * height) / 5);
 
     for (let i = 0; i < numSides; i++) {
       this.makeParticle(
-        random(0, width),
-        random(0, height),
+        startX + random(-10, 10),
+        startY + random(-10, 10),
         10,
         color(255),
         false
@@ -56,7 +56,7 @@ class SpringSystem {
   render() {
     // this.drawParticles();
 
-    fill(255, 255, 255, 50);
+    fill(this.color);
     noStroke();
 
     beginShape();
@@ -114,7 +114,6 @@ class SpringSystem {
 
   updateParticles(gravityOn, boundariesOn = true) {
     for (let i = 0; i < this.particles.length; i++) {
-      this.noiseOffset += NOISE_INCREMENT;
       this.addMutualRepulsion(i);
 
       this.particles[i].update(gravityOn, boundariesOn); // update all locations
@@ -202,9 +201,6 @@ class SpringSystem {
     const p = this.particles[i];
     const px = p.px;
     const py = p.py;
-    const noiseForce = this.springSystemIsActive
-      ? (noise(this.noiseOffset) - 0.5) * NOISE_MULTIPLE
-      : 0;
 
     for (let j = 0; j < i; j++) {
       const q = this.particles[j];
@@ -222,14 +218,8 @@ class SpringSystem {
       const repulsionForcex = componentInX * proportionToDistanceSquared;
       const repulsionForcey = componentInY * proportionToDistanceSquared;
 
-      p.addForce(
-        repulsionForcex * q.size + noiseForce,
-        repulsionForcey * q.size + noiseForce
-      ); // add in forces
-      q.addForce(
-        -repulsionForcex * p.size + noiseForce,
-        -repulsionForcey * p.size + noiseForce
-      ); // add in forces
+      p.addForce(repulsionForcex * q.size, repulsionForcey * q.size); // add in forces
+      q.addForce(-repulsionForcex * p.size, -repulsionForcey * p.size); // add in forces
     }
   }
 }
