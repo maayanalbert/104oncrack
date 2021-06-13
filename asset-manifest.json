@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/104oncrack/static/css/main.20a447b7.chunk.css",
-    "main.js": "/104oncrack/static/js/main.53146914.chunk.js",
-    "main.js.map": "/104oncrack/static/js/main.53146914.chunk.js.map",
+    "main.css": "/104oncrack/static/css/main.0a514b47.chunk.css",
+    "main.js": "/104oncrack/static/js/main.bd3d3bf3.chunk.js",
+    "main.js.map": "/104oncrack/static/js/main.bd3d3bf3.chunk.js.map",
     "runtime-main.js": "/104oncrack/static/js/runtime-main.6105c1df.js",
     "runtime-main.js.map": "/104oncrack/static/js/runtime-main.6105c1df.js.map",
-    "static/js/2.3a5269e2.chunk.js": "/104oncrack/static/js/2.3a5269e2.chunk.js",
-    "static/js/2.3a5269e2.chunk.js.map": "/104oncrack/static/js/2.3a5269e2.chunk.js.map",
+    "static/js/2.a41b6fa7.chunk.js": "/104oncrack/static/js/2.a41b6fa7.chunk.js",
+    "static/js/2.a41b6fa7.chunk.js.map": "/104oncrack/static/js/2.a41b6fa7.chunk.js.map",
     "static/js/3.fbc70908.chunk.js": "/104oncrack/static/js/3.fbc70908.chunk.js",
     "static/js/3.fbc70908.chunk.js.map": "/104oncrack/static/js/3.fbc70908.chunk.js.map",
     "index.html": "/104oncrack/index.html",
-    "static/css/main.20a447b7.chunk.css.map": "/104oncrack/static/css/main.20a447b7.chunk.css.map",
-    "static/js/2.3a5269e2.chunk.js.LICENSE.txt": "/104oncrack/static/js/2.3a5269e2.chunk.js.LICENSE.txt"
+    "static/css/main.0a514b47.chunk.css.map": "/104oncrack/static/css/main.0a514b47.chunk.css.map",
+    "static/js/2.a41b6fa7.chunk.js.LICENSE.txt": "/104oncrack/static/js/2.a41b6fa7.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.6105c1df.js",
-    "static/js/2.3a5269e2.chunk.js",
-    "static/css/main.20a447b7.chunk.css",
-    "static/js/main.53146914.chunk.js"
+    "static/js/2.a41b6fa7.chunk.js",
+    "static/css/main.0a514b47.chunk.css",
+    "static/js/main.bd3d3bf3.chunk.js"
   ]
 }
