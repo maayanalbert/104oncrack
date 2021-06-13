@@ -9,7 +9,7 @@ class Vehicle {
     this.maxspeed = isFast ? MAX_SPEED * FAST_SPEED_MULTIPLE : MAX_SPEED;
     this.noiseOffsetX = random(-5, 5);
     this.noiseOffsetY = random(-5, 5);
-    this.d = MINNOW_THICKNESS;
+    this.d = MINNOW_THICKNESS + random(-5, 5);
     this.length = this.d;
     this.r = random(0 - COLOR_RANGE / 2, 0 + COLOR_RANGE / 2);
     this.g = random(40 - COLOR_RANGE / 2, 40 + COLOR_RANGE / 2);
@@ -60,13 +60,13 @@ class Vehicle {
   }
 
   display() {
-    strokeWeight(1);
+    strokeWeight(2);
     stroke(135, 236, 224);
 
     if (this.isFast) {
       fill(228, 188, 44);
     } else {
-      fill(this.r, this.g, this.b);
+      fill(this.r, this.g, this.b, 230);
     }
 
     const theta = this.velocity.heading() + PI / 2;

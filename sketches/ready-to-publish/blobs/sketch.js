@@ -5,9 +5,7 @@ function setup() {
   const colors = [
     color(0, 120, 255), // blue
     color(255, 82, 0), // orange
-    // color(75, 0, 254), // purple
     color(255, 167, 0), // yellow
-    // color(0),
   ];
   for (let i = 0; i < 7; i++) {
     const numSides = floor(random(4, 10) / 2) * 2;
