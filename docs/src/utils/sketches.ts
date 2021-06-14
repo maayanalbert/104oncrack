@@ -9,6 +9,14 @@ export interface Sketch {
 
 export const sketches: Sketch[] = [
   {
+    url: "https://editor.p5js.org/maayan/present/ukeGuqRv-",
+    name: "matisse",
+    dark: false,
+    code: "https://editor.p5js.org/maayan/sketches/yIzR-Ye-Y",
+    date: new Date(2021, 5, 13),
+    description: "i'm a matisse knock off",
+  },
+  {
     url: "https://editor.p5js.org/maayan/present/Vg-LukoEb",
     name: "triangle-thingy",
     dark: true,
