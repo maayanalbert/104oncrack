@@ -1,3 +1,4 @@
+// based off: http://cmuems.com/2015c/more-springs/
 class SpringSystem {
   constructor(numSides, sideLen, c) {
     angleMode(DEGREES);

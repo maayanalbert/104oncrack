@@ -12,7 +12,10 @@
   <component name="ChangeListManager">
     <list default="true" id="b982db2a-590e-479b-bdb7-1fc96293a808" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/src/utils/sketches.ts" beforeDir="false" afterPath="$PROJECT_DIR$/docs/src/utils/sketches.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/src/components/Title.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/docs/src/components/Title.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sketches/published/matisse/Connection.js" beforeDir="false" afterPath="$PROJECT_DIR$/sketches/published/matisse/Connection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sketches/published/matisse/Particle.js" beforeDir="false" afterPath="$PROJECT_DIR$/sketches/published/matisse/Particle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sketches/published/matisse/SpringSystem.js" beforeDir="false" afterPath="$PROJECT_DIR$/sketches/published/matisse/SpringSystem.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,11 +65,11 @@
       <recent name="$PROJECT_DIR$/vehicle" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/sketches/published" />
       <recent name="$PROJECT_DIR$/docs/src/utils" />
       <recent name="$PROJECT_DIR$/docs/src" />
       <recent name="$PROJECT_DIR$/sketches/ready-to-publish" />
       <recent name="$PROJECT_DIR$/sketches/in-progress" />
-      <recent name="$PROJECT_DIR$/docs/public" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -94,7 +97,7 @@
       <workItem from="1623384218608" duration="3495000" />
       <workItem from="1623523013664" duration="9078000" />
       <workItem from="1623536404584" duration="14000" />
-      <workItem from="1623537167171" duration="29205000" />
+      <workItem from="1623537167171" duration="30141000" />
     </task>
     <servers />
   </component>
