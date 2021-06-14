@@ -1,4 +1,4 @@
-import { sketches } from "../sketches";
+import { sketches } from "../utils/sketches";
 import React from "react";
 import SketchFrame from "./SketchFrame";
 import {
@@ -6,8 +6,8 @@ import {
   GAP_SIZE,
   MIN_NUM_COLS,
   NUM_COLS,
-} from "../galleryDimensions";
-import useEventListener from "../useEventListener";
+} from "../utils/galleryDimensions";
+import useEventListener from "../utils/useEventListener";
 
 export default function Gallery() {
   const [numCols, setNumCols] = React.useState<number>(

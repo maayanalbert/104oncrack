@@ -11,22 +11,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b982db2a-590e-479b-bdb7-1fc96293a808" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/docs/src/utils/getSketchUrl.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/src/utils/scrollToSketch.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/src/utils/urlParams.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sketches/in-progress/blob/Connection.js" beforeDir="false" afterPath="$PROJECT_DIR$/sketches/ready-to-publish/blobs/Connection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sketches/in-progress/blob/Particle.js" beforeDir="false" afterPath="$PROJECT_DIR$/sketches/ready-to-publish/blobs/Particle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sketches/in-progress/blob/SpringSystem.js" beforeDir="false" afterPath="$PROJECT_DIR$/sketches/ready-to-publish/blobs/SpringSystem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sketches/in-progress/blob/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/sketches/ready-to-publish/blobs/constants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sketches/in-progress/blob/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/sketches/ready-to-publish/blobs/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sketches/in-progress/blob/sketch.js" beforeDir="false" afterPath="$PROJECT_DIR$/sketches/ready-to-publish/blobs/sketch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sketches/in-progress/blob/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/sketches/ready-to-publish/blobs/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sketches/in-progress/blob/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/sketches/ready-to-publish/blobs/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sketches/published/minnows/Vehicle.js" beforeDir="false" afterPath="$PROJECT_DIR$/sketches/ready-to-publish/minnows/Vehicle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sketches/published/minnows/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/sketches/ready-to-publish/minnows/constants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sketches/published/minnows/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/sketches/ready-to-publish/minnows/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sketches/published/minnows/minnows.mov" beforeDir="false" afterPath="$PROJECT_DIR$/sketches/ready-to-publish/minnows/minnows.mov" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sketches/published/minnows/sketch.js" beforeDir="false" afterPath="$PROJECT_DIR$/sketches/ready-to-publish/minnows/sketch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sketches/published/minnows/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/sketches/ready-to-publish/minnows/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sketches/published/minnows/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/sketches/ready-to-publish/minnows/utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/docs/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/src/components/Gallery.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/docs/src/components/Gallery.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/src/components/SketchFrame.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/docs/src/components/SketchFrame.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/src/components/Title.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/docs/src/components/Title.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/src/galleryDimensions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/docs/src/utils/galleryDimensions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/src/openInNewTab.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/docs/src/utils/openInNewTab.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/src/sketches.ts" beforeDir="false" afterPath="$PROJECT_DIR$/docs/src/utils/sketches.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/src/useEventListener.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/docs/src/utils/useEventListener.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sketches/ready-to-publish/blobs/SpringSystem.js" beforeDir="false" afterPath="$PROJECT_DIR$/sketches/ready-to-publish/blobs/SpringSystem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sketches/ready-to-publish/minnows/Vehicle.js" beforeDir="false" afterPath="$PROJECT_DIR$/sketches/ready-to-publish/minnows/Vehicle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sketches/ready-to-publish/minnows/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/sketches/ready-to-publish/minnows/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sketches/ready-to-publish/minnows/sketch.js" beforeDir="false" afterPath="$PROJECT_DIR$/sketches/ready-to-publish/minnows/sketch.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,11 +76,11 @@
       <recent name="$PROJECT_DIR$/vehicle" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docs/src/utils" />
+      <recent name="$PROJECT_DIR$/docs/src" />
       <recent name="$PROJECT_DIR$/sketches/ready-to-publish" />
       <recent name="$PROJECT_DIR$/sketches/in-progress" />
       <recent name="$PROJECT_DIR$/docs/public" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/interactive-gallery/src" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -108,7 +108,7 @@
       <workItem from="1623384218608" duration="3495000" />
       <workItem from="1623523013664" duration="9078000" />
       <workItem from="1623536404584" duration="14000" />
-      <workItem from="1623537167171" duration="21283000" />
+      <workItem from="1623537167171" duration="28146000" />
     </task>
     <servers />
   </component>

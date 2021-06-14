@@ -3,7 +3,7 @@ class SpringSystem {
     angleMode(DEGREES);
     this.thickness = 1;
     this.color = c;
-    this.color.setAlpha(220);
+    this.color.setAlpha(215);
     this.particles = [];
     this.connections = {};
     this.grabbedParticle = -1;
@@ -55,8 +55,10 @@ class SpringSystem {
 
   render() {
     // this.drawParticles();
+    blendMode(DARKEST);
 
     fill(this.color);
+
     noStroke();
 
     beginShape();

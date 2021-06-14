@@ -1,19 +1,16 @@
 // based off: https://natureofcode.com/book/chapter-6-autonomous-agents/
 class Vehicle {
-  constructor(x, y, isFast = false) {
-    this.isFast = isFast;
+  constructor(x, y) {
     this.location = createVector(x, y);
     this.velocity = createVector(0, 0);
     this.acceleration = createVector(0, 0);
-    this.maxforce = isFast ? MAX_FORCE * FAST_FORCE_MULTIPLE : MAX_FORCE;
-    this.maxspeed = isFast ? MAX_SPEED * FAST_SPEED_MULTIPLE : MAX_SPEED;
     this.noiseOffsetX = random(-5, 5);
     this.noiseOffsetY = random(-5, 5);
     this.d = MINNOW_THICKNESS + random(-5, 5);
     this.length = this.d;
     this.r = random(0 - COLOR_RANGE / 2, 0 + COLOR_RANGE / 2);
-    this.g = random(40 - COLOR_RANGE / 2, 40 + COLOR_RANGE / 2);
-    this.b = random(57 - COLOR_RANGE / 2, 57 + COLOR_RANGE / 2);
+    this.g = random(50 - COLOR_RANGE / 2, 50 + COLOR_RANGE / 2);
+    this.b = random(100 - COLOR_RANGE / 2, 100 + COLOR_RANGE / 2);
   }
 
   update() {
@@ -27,13 +24,13 @@ class Vehicle {
 
     this.acceleration.add(createVector(noiseForceX, noiseForceY));
     this.velocity.add(this.acceleration);
-    this.velocity.limit(this.maxspeed);
+    this.velocity.limit(MAX_SPEED);
     this.location.add(this.velocity);
     this.location = this.boundWithinCanvas(this.location);
     this.length = map(
       abs(this.velocity.x) + abs(this.velocity.y),
       0,
-      this.maxspeed * 2,
+      MAX_SPEED * 2,
       this.d,
       this.d * LEN_MULTIPLE
     );
@@ -53,21 +50,17 @@ class Vehicle {
   seek(target) {
     const desired = target.sub(this.location);
     desired.normalize();
-    desired.mult(this.maxspeed);
+    desired.mult(MAX_SPEED);
     const steer = desired.sub(this.velocity);
-    steer.limit(this.maxforce);
+    steer.limit(MAX_FORCE);
     this.applyForce(steer);
   }
 
   display() {
     strokeWeight(2);
-    stroke(135, 236, 224);
+    stroke(bgColor);
 
-    if (this.isFast) {
-      fill(228, 188, 44);
-    } else {
-      fill(this.r, this.g, this.b, 230);
-    }
+    fill(this.r, this.g, this.b);
 
     const theta = this.velocity.heading() + PI / 2;
     push();
