@@ -17,7 +17,7 @@ function setup() {
 }
 
 function draw() {
-  background(bgColor);
+  background(0, 255, 0);
   minnows.forEach((vehicle) => vehicle.seek(createVector(mouseX, mouseY)));
   minnows.forEach((vehicle) => vehicle.update());
   minnows.forEach((vehicle) => vehicle.display());

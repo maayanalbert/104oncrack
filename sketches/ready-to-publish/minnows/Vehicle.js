@@ -58,9 +58,9 @@ class Vehicle {
 
   display() {
     strokeWeight(2);
-    stroke(bgColor);
+    stroke(0, 255, 0);
 
-    fill(this.r, this.g, this.b);
+    fill(255);
 
     const theta = this.velocity.heading() + PI / 2;
     push();

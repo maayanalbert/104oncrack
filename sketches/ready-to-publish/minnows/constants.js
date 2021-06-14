@@ -4,5 +4,5 @@ const NUM_MINNOWS = 100;
 const LEN_MULTIPLE = 5;
 const MINNOW_THICKNESS = 15;
 const COLOR_RANGE = 50;
-const MAX_FORCE = 0.25;
-const MAX_SPEED = 7;
+const MAX_FORCE = 0.2;
+const MAX_SPEED = 6;
