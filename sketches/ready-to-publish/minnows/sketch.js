@@ -2,7 +2,7 @@ const minnows = [];
 let bgColor;
 
 function setup() {
-  createCanvas(window.innerWidth, window.innerHeight);
+  createCanvas(window.innerHeight, window.innerHeight);
   bgColor = color(153, 215, 207);
 
   for (let i = 0; i < NUM_MINNOWS; i++) {

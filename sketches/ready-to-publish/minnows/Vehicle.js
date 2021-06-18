@@ -6,7 +6,7 @@ class Vehicle {
     this.acceleration = createVector(0, 0);
     this.noiseOffsetX = random(-5, 5);
     this.noiseOffsetY = random(-5, 5);
-    this.d = isFast ? MINNOW_THICKNESS + random(-25, 25) : MINNOW_THICKNESS;
+    this.d = isFast ? MINNOW_THICKNESS + random(-15, 15) : MINNOW_THICKNESS;
     this.length = this.d;
     this.isFast = isFast;
   }
