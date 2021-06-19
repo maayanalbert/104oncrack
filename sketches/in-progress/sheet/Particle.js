@@ -5,7 +5,6 @@ class Particle {
     this.py = y;
     this.vx = 0;
     this.vy = 0;
-    this.damping = 0.96;
     this.size = size;
     this.color = color;
     this.isFixed = isFixed;
@@ -25,8 +24,8 @@ class Particle {
     if (gravityOn && this.py + 1 < heightBorder) {
       this.addForce(0, 0.1); // gravity!
     }
-    this.vx *= this.damping;
-    this.vy *= this.damping;
+    this.vx *= DAMPING;
+    this.vy *= DAMPING;
 
     this.limitVelocities();
     this.handleBoundaries(boundariesOn);
@@ -57,7 +56,7 @@ class Particle {
     const zeroBorder = 0 + this.size / 2;
     const widthBorder = width - this.size / 2;
     const heightBorder = height - this.size / 2;
-    const boundaryDamping = Math.pow(this.damping, 10);
+    const boundaryDamping = Math.pow(DAMPING, 10);
     if (boundariesOn) {
       if (this.px >= widthBorder) {
         this.vx = abs(this.vx) * -1 * boundaryDamping;

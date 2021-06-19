@@ -8,7 +8,7 @@ function setup() {
     color(255, 167, 0), // yellow
   ];
 
-  springSystems.push(new SpringSystem(100, colors[1]));
+  springSystems.push(new SpringSystem(125, colors[1], 7));
 }
 
 function draw() {

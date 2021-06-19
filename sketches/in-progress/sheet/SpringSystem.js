@@ -2,9 +2,9 @@ const cornerGuide = ["upperLeft", "upperRight", "lowerRight", "lowerLeft"];
 
 // based off: http://cmuems.com/2015c/more-springs/
 class SpringSystem {
-  constructor(sideLen, c) {
+  constructor(sideLen, c, numRects) {
     angleMode(DEGREES);
-    this.thickness = 1;
+    this.thickness = 5;
     this.color = c;
     this.lightColor = color(this.color.toString());
     this.lightColor.setAlpha(100);
@@ -15,53 +15,59 @@ class SpringSystem {
     this.mouseClickOn = false;
     this.rects = [];
 
-    const startX1 = random(width / 5, (4 * width) / 5);
-    const startY1 = random(height / 5, (4 * height) / 5);
-    const corners0 = this.makeRectangle(sideLen, startX1, startY1);
-    this.rects.push(corners0);
-    const startX2 = random(width / 5, (4 * width) / 5);
-    const startY2 = random(height / 5, (4 * height) / 5);
-    const corners1 = this.makeRectangle(sideLen, startX2, startY2, {
-      upperLeft: this.rects[0].upperRight,
-      lowerLeft: this.rects[0].lowerRight,
-    });
-    this.rects.push(corners1);
-    const startX3 = random(width / 5, (4 * width) / 5);
-    const startY3 = random(height / 5, (4 * height) / 5);
-    const corners2 = this.makeRectangle(sideLen, startX3, startY3, {
-      upperLeft: this.rects[1].upperRight,
-      lowerLeft: this.rects[1].lowerRight,
-    });
-    this.rects.push(corners2);
+    for (let i = 0; i < numRects; i++) {
+      const startX = random(width / 5, (4 * width) / 5);
+      const startY = random(height / 5, (4 * height) / 5);
+      const startingCornersInd = this.rects.length - 1;
+      const startingCorners =
+        startingCornersInd >= 0
+          ? {
+              upperLeft: this.rects[startingCornersInd].upperRight,
+              lowerLeft: this.rects[startingCornersInd].lowerRight,
+            }
+          : undefined;
+      const corners = this.makeRectangle(
+        sideLen,
+        startX,
+        startY,
+        startingCorners
+      );
+      this.rects.push(corners);
 
-    this.connectParticles(
-      this.rects[0].upperRight,
-      this.rects[2].upperRight,
-      sideLen * 2,
-      0,
-      this.lightColor
-    );
-    this.connectParticles(
-      this.rects[0].upperLeft,
-      this.rects[2].upperLeft,
-      sideLen * 2,
-      0,
-      this.lightColor
-    );
-    this.connectParticles(
-      this.rects[0].lowerRight,
-      this.rects[2].lowerRight,
-      sideLen * 2,
-      0,
-      this.lightColor
-    );
-    this.connectParticles(
-      this.rects[0].lowerLeft,
-      this.rects[2].lowerLeft,
-      sideLen * 2,
-      0,
-      this.lightColor
-    );
+      if (i >= 2) {
+        this.connectParticles(
+          this.rects[i - 2].upperRight,
+          this.rects[i].upperRight,
+          sideLen * 2,
+          0,
+          this.color
+        );
+
+        this.connectParticles(
+          this.rects[i - 2].lowerRight,
+          this.rects[i].lowerRight,
+          sideLen * 2,
+          0,
+          this.color
+        );
+      } else if (i === 1) {
+        this.connectParticles(
+          this.rects[i - 1].upperLeft,
+          this.rects[i].upperRight,
+          sideLen * 2,
+          0,
+          this.color
+        );
+
+        this.connectParticles(
+          this.rects[i - 1].lowerLeft,
+          this.rects[i].lowerRight,
+          sideLen * 2,
+          0,
+          this.color
+        );
+      }
+    }
   }
 
   makeRectangle(sideLen, startX, startY, corners) {
@@ -73,7 +79,7 @@ class SpringSystem {
         const particleId = this.makeParticle(
           startX + random(-10, 10),
           startY + random(-10, 10),
-          10,
+          5,
           this.color,
           false
         );
@@ -86,7 +92,7 @@ class SpringSystem {
         this.getCornerFromIndex(newCorners, i),
         this.getCornerFromIndex(newCorners, (i + 1) % numSides),
         sideLen,
-        1,
+        this.thickness,
         this.color
       );
     }
@@ -126,8 +132,6 @@ class SpringSystem {
   }
 
   render() {
-    this.drawParticles();
-
     noStroke();
 
     for (let rect of this.rects) {
@@ -214,6 +218,7 @@ class SpringSystem {
       );
       endShape();
     }
+    this.drawParticles();
   }
 
   connectParticles(pk, qk, distance, lineWeight, lineColor) {
