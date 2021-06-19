@@ -10,44 +10,21 @@ class SpringSystem {
     this.grabbedParticle = -1;
     this.springSystemIsActive = false;
 
-    const startX = random(width / 5, (4 * width) / 5);
-    const startY = random(height / 5, (4 * height) / 5);
-
-    for (let i = 0; i < numSides; i++) {
-      this.makeParticle(
-        startX + random(-10, 10),
-        startY + random(-10, 10),
-        10,
-        color(255),
-        false
-      );
-    }
-
-    for (let i = 0; i < numSides; i++) {
-      this.connectParticles(i, (i + 1) % numSides, sideLen, 1, color(255));
-    }
-
-    const innerConnectionLen = this.getLengthOfInnerConnection(
-      sideLen,
-      numSides
+    this.makeParticle(
+      startX + random(-10, 10),
+      startY + random(-10, 10),
+      10,
+      color(255),
+      false
     );
 
-    for (let i = 0; i < numSides; i++) {
-      this.connectParticles(
-        i,
-        (i + 2) % numSides,
-        innerConnectionLen,
-        1,
-        color(255)
-      );
-    }
-  }
-
-  getLengthOfInnerConnection(sideLen, numSides) {
-    const numDegrees = (numSides - 2) * 180;
-    const degreesPerAngle = numDegrees / numSides;
-    const innerAngleDegrees = (180 - degreesPerAngle) / 2;
-    return (sideLen * sin(degreesPerAngle)) / sin(innerAngleDegrees);
+    this.connectParticles(
+      i,
+      (i + 2) % numSides,
+      innerConnectionLen,
+      1,
+      color(255)
+    );
   }
 
   update() {
