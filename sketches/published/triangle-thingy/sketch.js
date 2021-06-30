@@ -1,5 +1,5 @@
 let springSystem;
-const sideLen = 75;
+const sideLen = 100;
 let corners;
 
 let rOff;
@@ -27,11 +27,11 @@ function addRect(springSystem, horizSideLen, vertSideLen, corners) {
   const bottomLeft = corners?.bottomLeft ?? springSystem.makeParticle();
   const bottomRight = corners?.bottomRight ?? springSystem.makeParticle();
 
-  springSystem.connectParticles(bottomLeft, bottomRight, horizSideLen, true);
-  springSystem.connectParticles(topLeft, bottomLeft, vertSideLen, true);
+  springSystem.connectParticles(bottomLeft, bottomRight, horizSideLen, false);
+  springSystem.connectParticles(topLeft, bottomLeft, vertSideLen, false);
 
   const diagLen = getHypotenuseOfRightTriangle(horizSideLen, vertSideLen);
-  springSystem.connectParticles(topRight, bottomLeft, horizSideLen, true);
+  springSystem.connectParticles(topRight, bottomLeft, horizSideLen, false);
   springSystem.connectParticles(bottomRight, topLeft, vertSideLen, false);
 
   springSystem.connectParticles(topRight, bottomRight, vertSideLen, false);
@@ -42,7 +42,9 @@ function addRect(springSystem, horizSideLen, vertSideLen, corners) {
 }
 
 function draw() {
-  background(0, 0, 0);
+  updateSound(springSystem.getIsMoving());
+
+  background(255 - r, 255 - g, 255 - b);
 
   springSystem.update();
   springSystem.render();
