@@ -18,7 +18,7 @@ export interface Soundtrack {
 const defaultSoundtrack = {
   artist: "thank u for ur patience :)",
   imgFile: "jank.jpeg",
-  trackName: "sorry i'm still picking a song for this",
+  trackName: "sry i'm still picking a song for this",
   audioFile: "",
 };
 
