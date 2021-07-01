@@ -16,10 +16,10 @@ export interface Soundtrack {
 }
 
 const defaultSoundtrack = {
-  audioFile: "pain.mp3",
   artist: "thank u for ur patience :)",
   imgFile: "jank.jpeg",
   trackName: "sorry i'm still picking a song for this",
+  audioFile: "",
 };
 
 export const sketches: Sketch[] = [
