@@ -3,7 +3,7 @@ class SpringSystem {
   constructor(mouseClickOn = false) {
     angleMode(DEGREES);
     this.noiseOffset = random(-5, 5);
-    this.thickness = 20;
+    this.thickness = 15;
     this.color = color(255, 255, 255);
     this.particles = [];
     this.connections = {};

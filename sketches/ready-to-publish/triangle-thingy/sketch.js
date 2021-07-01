@@ -1,5 +1,5 @@
 let springSystem;
-const sideLen = 100;
+const sideLen = 75;
 let corners;
 
 let rOff;
@@ -42,8 +42,6 @@ function addRect(springSystem, horizSideLen, vertSideLen, corners) {
 }
 
 function draw() {
-  updateSound(springSystem.getIsMoving());
-
   background(255 - r, 255 - g, 255 - b);
 
   springSystem.update();
