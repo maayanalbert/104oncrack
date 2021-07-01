@@ -11,18 +11,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b982db2a-590e-479b-bdb7-1fc96293a808" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/docs/public/albumCovers/jank.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/public/albumCovers/lonely.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/public/albumCovers/loonatic.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/public/albumCovers/omomo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/public/albumCovers/sanctuary.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/public/audio/lonely.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/public/audio/loonatic.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/public/audio/omomo.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/public/audio/pain.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/public/audio/sanctuary.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/src/components/FrameTrimmings.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/src/utils/useSound.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sketches/published/triangle-thingy/Connection.js" beforeDir="false" afterPath="$PROJECT_DIR$/sketches/ready-to-publish/triangle-thingy/Connection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sketches/published/triangle-thingy/LOONATIC.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sketches/published/triangle-thingy/Particle.js" beforeDir="false" afterPath="$PROJECT_DIR$/sketches/ready-to-publish/triangle-thingy/Particle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sketches/published/triangle-thingy/SpringSystem.js" beforeDir="false" afterPath="$PROJECT_DIR$/sketches/ready-to-publish/triangle-thingy/SpringSystem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sketches/published/triangle-thingy/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/sketches/ready-to-publish/triangle-thingy/constants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sketches/published/triangle-thingy/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/sketches/ready-to-publish/triangle-thingy/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sketches/published/triangle-thingy/sketch.js" beforeDir="false" afterPath="$PROJECT_DIR$/sketches/ready-to-publish/triangle-thingy/sketch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sketches/published/triangle-thingy/sound.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sketches/published/triangle-thingy/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/sketches/ready-to-publish/triangle-thingy/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sketches/published/triangle-thingy/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/sketches/ready-to-publish/triangle-thingy/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sketches/published/triangle-thingy/vid.mov" beforeDir="false" afterPath="$PROJECT_DIR$/sketches/ready-to-publish/triangle-thingy/vid.mov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/src/components/SketchFrame.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/docs/src/components/SketchFrame.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/src/utils/sketches.ts" beforeDir="false" afterPath="$PROJECT_DIR$/docs/src/utils/sketches.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/docs/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,14 +47,14 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/sketches/ready-to-publish/sheet/Particle.js" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/sketches/ready-to-publish/triangle-thingy/style.css" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/sketches/ready-to-publish/triangle-thingy/sketch.js" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/sketches/ready-to-publish/triangle-thingy/SpringSystem.js" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/sketches/ready-to-publish/triangle-thingy/Particle.js" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/sketches/ready-to-publish/triangle-thingy/index.html" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/sketches/ready-to-publish/triangle-thingy/Connection.js" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/sketches/ready-to-publish/triangle-thingy/utils.js" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/sketches/ready-to-publish/triangle-thingy/constants.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/sketches/published/triangle-thingy/style.css" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/sketches/published/triangle-thingy/sketch.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/sketches/published/triangle-thingy/SpringSystem.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/sketches/published/triangle-thingy/Particle.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/sketches/published/triangle-thingy/index.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/sketches/published/triangle-thingy/Connection.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/sketches/published/triangle-thingy/utils.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/sketches/published/triangle-thingy/constants.js" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1sMs5hGpKWH5JiQk5m0GYJfptrU" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -61,7 +66,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/sketches/in-progress" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/docs/public" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -76,18 +81,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docs/public" />
       <recent name="$PROJECT_DIR$/sketches/in-progress" />
       <recent name="$PROJECT_DIR$/sketches/published" />
       <recent name="$PROJECT_DIR$/interactive-gallery/src/components" />
       <recent name="$PROJECT_DIR$/in-progress" />
-      <recent name="$PROJECT_DIR$/in progress" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docs/public/albumCovers" />
+      <recent name="$PROJECT_DIR$/docs/public/audio" />
+      <recent name="$PROJECT_DIR$/sketches/published" />
       <recent name="$PROJECT_DIR$/sketches/ready-to-publish" />
       <recent name="$PROJECT_DIR$/sketches/published/triangle-thingy" />
-      <recent name="$PROJECT_DIR$/sketches/in-progress" />
-      <recent name="$PROJECT_DIR$/sketches/published" />
-      <recent name="$PROJECT_DIR$/docs/src/utils" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -121,7 +126,7 @@
       <workItem from="1623990619251" duration="14362000" />
       <workItem from="1624767128980" duration="678000" />
       <workItem from="1625017093526" duration="7783000" />
-      <workItem from="1625107376773" duration="417000" />
+      <workItem from="1625107376773" duration="6669000" />
     </task>
     <servers />
   </component>

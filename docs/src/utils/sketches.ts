@@ -5,7 +5,22 @@ export interface Sketch {
   code: string;
   date: Date;
   description: string;
+  soundtrack: Soundtrack;
 }
+
+export interface Soundtrack {
+  audioFile: string;
+  imgFile: string;
+  artist: string;
+  trackName: string;
+}
+
+const defaultSoundtrack = {
+  audioFile: "pain.mp3",
+  artist: "thank u for your patience :)",
+  imgFile: "jank.jpeg",
+  trackName: "sorry i'm still picking a song for this",
+};
 
 export const sketches: Sketch[] = [
   {
@@ -15,6 +30,7 @@ export const sketches: Sketch[] = [
     code: "https://editor.p5js.org/maayan/sketches/yIzR-Ye-Y",
     date: new Date(2021, 5, 13),
     description: "i'm a matisse knock off",
+    soundtrack: defaultSoundtrack,
   },
   {
     url: "https://editor.p5js.org/maayan/present/Vg-LukoEb",
@@ -23,6 +39,12 @@ export const sketches: Sketch[] = [
     code: "https://editor.p5js.org/maayan/sketches/X95eHHiuX",
     date: new Date(2021, 5, 11),
     description: "3D graphics are overrated",
+    soundtrack: {
+      imgFile: "loonatic.jpeg",
+      artist: "LOONA / ODD EYE CIRLCE",
+      trackName: "LOONATIC",
+      audioFile: "loonatic.mp3",
+    },
   },
   {
     url: "https://editor.p5js.org/maayan/present/9BqHehQCh",
@@ -31,6 +53,12 @@ export const sketches: Sketch[] = [
     code: "https://editor.p5js.org/maayan/sketches/0jlzjY8ds",
     date: new Date(2021, 5, 11),
     description: "plastic like the particles in our blood",
+    soundtrack: {
+      imgFile: "sanctuary.png",
+      artist: "Joji",
+      trackName: "Sanctuary",
+      audioFile: "sanctuary.mp3",
+    },
   },
   {
     url: "https://editor.p5js.org/maayan/present/jnJ_fII_O",
@@ -39,6 +67,12 @@ export const sketches: Sketch[] = [
     code: "https://editor.p5js.org/maayan/sketches/yLhu1mf8G",
     date: new Date(2021, 5, 3),
     description: "minnows eat their young",
+    soundtrack: {
+      imgFile: "omomo.jpg",
+      artist: "Warren Hue",
+      trackName: "omomo punk",
+      audioFile: "omomo.mp3",
+    },
   },
   {
     url: "https://editor.p5js.org/maayan/present/TlN-_jf79",
@@ -47,5 +81,11 @@ export const sketches: Sketch[] = [
     dark: true,
     date: new Date(2021, 4, 3),
     description: "are you sad inside too?",
+    soundtrack: {
+      imgFile: "lonely.jpeg",
+      artist: "Akon",
+      trackName: "Lonely",
+      audioFile: "lonely.mp3",
+    },
   },
 ];
