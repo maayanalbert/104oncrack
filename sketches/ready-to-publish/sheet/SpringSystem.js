@@ -6,18 +6,42 @@ class SpringSystem {
     angleMode(DEGREES);
     this.thickness = 5;
     this.color = c;
-    this.lightColor = color(this.color.toString());
-    this.lightColor.setAlpha(100);
     this.particles = [];
     this.connections = {};
     this.grabbedParticle = -1;
     this.springSystemIsActive = false;
     this.mouseClickOn = false;
     this.rects = [];
+    this.updateColor();
     this.sideLen = sideLen;
-    this.addRect();
-    this.addRect();
-    this.addRect();
+    this.isGrowing = true;
+    while (this.rects.length < MAX_RECTS) {
+      this.addRect();
+    }
+  }
+
+  updateColor() {
+    this.color.setRed(random(50, 255));
+
+    this.lightColor = color(this.color.toString());
+    this.lightColor.setAlpha(100);
+  }
+
+  removeMostRecentRect() {
+    this.removeMostRecentParticle();
+    this.removeMostRecentParticle();
+    this.rects.pop();
+  }
+
+  removeMostRecentParticle() {
+    this.particles.pop();
+    const pk = this.particles.length;
+    for (const connectionKey of Object.keys(this.connections)) {
+      const pks = connectionKey.split("_");
+      if (pk.toString() === pks[0] || pk.toString() === pks[1]) {
+        delete this.connections[connectionKey];
+      }
+    }
   }
 
   addRect() {
@@ -269,13 +293,24 @@ class SpringSystem {
     this.springSystemIsActive = this.mouseClickOn
       ? mouseIsPressed
       : this.getNewSpringSystemIsActive();
-    if (
-      oldSpringSystemIsActive &&
-      !this.springSystemIsActive &&
-      this.rects.length < MAX_RECTS
-    ) {
-      this.addRect();
+
+    if (oldSpringSystemIsActive && !this.springSystemIsActive) {
+      this.updateColor();
+      if (this.isGrowing) {
+        this.addRect();
+      } else {
+        this.removeMostRecentRect();
+      }
     }
+
+    if (this.rects.length === MAX_RECTS) {
+      this.isGrowing = false;
+    }
+
+    if (this.rects.length === MIN_RECTS) {
+      this.isGrowing = true;
+    }
+
     this.handleMouseMove();
 
     Object.values(this.connections).forEach((connection) => {

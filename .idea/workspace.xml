@@ -11,8 +11,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b982db2a-590e-479b-bdb7-1fc96293a808" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/docs/public/albumCovers/body.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/public/audio/body.mp3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/src/utils/sketches.ts" beforeDir="false" afterPath="$PROJECT_DIR$/docs/src/utils/sketches.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sketches/ready-to-publish/sheet/SpringSystem.js" beforeDir="false" afterPath="$PROJECT_DIR$/sketches/ready-to-publish/sheet/SpringSystem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sketches/ready-to-publish/sheet/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/sketches/ready-to-publish/sheet/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sketches/ready-to-publish/sheet/sketch.js" beforeDir="false" afterPath="$PROJECT_DIR$/sketches/ready-to-publish/sheet/sketch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sketches/ready-to-publish/sheet/vid.mov" beforeDir="false" afterPath="$PROJECT_DIR$/sketches/ready-to-publish/sheet/vid.mov" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +117,8 @@
       <workItem from="1623990619251" duration="14362000" />
       <workItem from="1624767128980" duration="678000" />
       <workItem from="1625017093526" duration="7783000" />
-      <workItem from="1625107376773" duration="7827000" />
+      <workItem from="1625107376773" duration="8365000" />
+      <workItem from="1625626168032" duration="6757000" />
     </task>
     <servers />
   </component>
