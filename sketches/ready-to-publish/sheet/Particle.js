@@ -92,7 +92,6 @@ class Particle {
 
   render() {
     strokeWeight(0);
-    fill(this.color);
     ellipse(this.px, this.py, this.size, this.size);
   }
 }

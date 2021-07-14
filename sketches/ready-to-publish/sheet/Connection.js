@@ -11,7 +11,6 @@ class Connection {
   render() {
     const p = this.p;
     const q = this.q;
-    stroke(this.lineColor);
     strokeWeight(this.lineWeight);
     line(p.px, p.py, q.px, q.py);
   }

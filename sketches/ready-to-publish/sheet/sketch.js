@@ -9,8 +9,8 @@ function setup() {
 
 function draw() {
   blendMode(BLEND);
+  background(0);
 
-  background(248, 245, 241);
   springSystem.update();
   springSystem.render();
 }

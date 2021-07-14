@@ -26,7 +26,7 @@ export const sketches: Sketch[] = [
   {
     url: "https://editor.p5js.org/maayan/present/QjuUJoSVs",
     name: "sheet",
-    dark: false,
+    dark: true,
     code: "https://editor.p5js.org/maayan/sketches/XJrEkQGnX",
     date: new Date(2021, 7, 6),
     description: "shake for a surprise",

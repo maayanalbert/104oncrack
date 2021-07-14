@@ -4,15 +4,17 @@ const cornerGuide = ["upperLeft", "upperRight", "lowerRight", "lowerLeft"];
 class SpringSystem {
   constructor(sideLen, c) {
     angleMode(DEGREES);
+    this.colors = [color(255, 59, 147), color(0, 100, 255)];
+
+    this.colorInd = 0;
+    this.updateColor();
     this.thickness = 5;
-    this.color = c;
     this.particles = [];
     this.connections = {};
     this.grabbedParticle = -1;
     this.springSystemIsActive = false;
     this.mouseClickOn = false;
     this.rects = [];
-    this.updateColor();
     this.sideLen = sideLen;
     this.isGrowing = true;
     while (this.rects.length < MAX_RECTS) {
@@ -21,10 +23,10 @@ class SpringSystem {
   }
 
   updateColor() {
-    this.color.setRed(random(50, 255));
-
+    this.color = this.colors[this.colorInd];
     this.lightColor = color(this.color.toString());
     this.lightColor.setAlpha(100);
+    this.colorInd = (this.colorInd + 1) % this.colors.length;
   }
 
   removeMostRecentRect() {
@@ -319,6 +321,8 @@ class SpringSystem {
   }
 
   drawParticles() {
+    stroke(this.color);
+    fill(this.color);
     Object.values(this.connections).forEach(function (connection) {
       connection.render();
     });
